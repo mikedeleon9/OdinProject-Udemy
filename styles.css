@@ -66,12 +66,7 @@ main{
 
 }
 
-.upper-topbar{
-  
-  display: flex;
-  justify-content: space-between;
-  
-}
+.upper-topbar{display: flex; }
 
 .input-div{
   display: flex;
@@ -93,10 +88,16 @@ input{
 
 .upper-topbar > div{
   display: flex;
-  
+  align-items: center;
+  gap: 2rem;
   
 }
 
+.bell{
+ font-size: 1.2rem;
+ font-weight: 600;
+  
+}
 .main-content{
   
 }
