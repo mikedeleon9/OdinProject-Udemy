@@ -35,13 +35,13 @@ main{
     
 }
 
-.top-portion-sidebar{
+.top-portion-sidebar, .bottom-portion-sidebar{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.top-portion-sidebar > div{
+.top-portion-sidebar > div, .bottom-portion-sidebar > div{
     
     display: flex;
     align-items: center;
@@ -51,9 +51,50 @@ main{
 
 }
 
- .top-portion-sidebar > div > i, .top-portion-sidebar > div > p{
+ .top-portion-sidebar > div > i, .top-portion-sidebar > div > p, .bottom-portion-sidebar > div > span, .bottom-portion-sidebar > div > p{
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+.main-page{
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.top-bar{
+ 
+
+}
+
+.upper-topbar{
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+}
+
+.input-div{
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+input{
+  width: 80%;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: lightgrey;
+}
+
+.upper-topbar > div{
+  display: flex;
+  
+  
+}
+
+.main-content{
+  
 }
 
 
