@@ -10,7 +10,7 @@ main{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 6fr;
-    
+   
 }
 
 #sidebar{
@@ -130,24 +130,37 @@ button{
 .main-content{
   background: #e1e2e8;
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: repeat(2, 1fr), 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 2rem;
+  height: 100vh;
+  
 }
 
 .main-content > div{
   border: 2px solid black;
-  
-  
+  grid-column: span 1;  
 }
 
-.side{
+.main-container{
+  height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 4fr 1fr;
+  padding: 2rem; 
+  gap: 1rem;
+  
+}
+.side{
+ 
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 }
 
 .side > div{
-  bordeR: 2px solid red;
+  grid-template-rows: 1fr 1fr;
+ 
+  border: 2px solid green;
 }
 @media (max-width: 1800px) {
     .container {
