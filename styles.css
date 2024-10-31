@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    --custom-blue: #0ea5e9;
 }
 
 main{
@@ -14,7 +15,7 @@ main{
 
 #sidebar{
     padding: 2rem;
-    background-color: #0ea5e9;
+    background-color: var(--custom-blue);
     color: white;
     display: flex;
     flex-direction: column;
@@ -23,17 +24,13 @@ main{
 }
 
 
-
 .heading{
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.mdi-view-dashboard{
-    font-size: 2.5rem;
-    
-}
+
 
 .top-portion-sidebar, .bottom-portion-sidebar{
     display: flex;
@@ -46,36 +43,35 @@ main{
     display: flex;
     align-items: center;
     gap: 1rem;
-    
-  
 
 }
 
- .top-portion-sidebar > div > i, .top-portion-sidebar > div > p, .bottom-portion-sidebar > div > span, .bottom-portion-sidebar > div > p{
-    font-size: 1.2rem;
+ .top-portion-sidebar > div > i, .top-portion-sidebar > div > p, .bottom-portion-sidebar > div > span, .bottom-portion-sidebar > div > p, .mdi-magnify{
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 .main-page{
   display: grid;
   grid-template-rows: 20% 80%;
+  padding: 0 3rem;
 }
 
 .top-bar{
- padding: 2rem;
-
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  
 }
 
-.upper-topbar{display: flex; }
+.upper-topbar{display: flex; justify-content: space-between;}
 
 .input-div{
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  width: 80%;
-}
-.mdi-magnify{
-  font-size: 1.5rem;
+  
 }
 
 input{
@@ -97,6 +93,26 @@ input{
  font-size: 1.2rem;
  font-weight: 600;
   
+}
+
+button{
+  background-color: var(--custom-blue);
+  color:white;
+  padding: 0.7rem 1.8rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.bottom-topbar{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-bottom-topbar{
+  display: flex;
+  gap: 1.2rem;
 }
 .main-content{
   
