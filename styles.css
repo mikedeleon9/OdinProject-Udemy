@@ -128,30 +128,28 @@ button{
 }
 
 .main-content{
-  background: #e1e2e8;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2rem;
   height: 100vh;
-  
 }
 
 .main-content > div{
-  border: 2px solid black;
-  grid-column: span 1;  
+  bordeR: 2px solid black;
+  
 }
 
 .main-container{
-  height: 100vh;
+  
   display: grid;
   grid-template-columns: 4fr 1fr;
-  padding: 2rem; 
-  gap: 1rem;
-  
+  background: #e1e2e8;
+  padding: 4rem 2rem;
+  gap: 1.5rem;
 }
+
 .side{
- 
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
@@ -159,8 +157,13 @@ button{
 
 .side > div{
   grid-template-rows: 1fr 1fr;
- 
   border: 2px solid green;
+}
+
+.card{
+  background: white;
+  height: 100%;
+  border-radius: 0.7rem;
 }
 @media (max-width: 1800px) {
     .container {
