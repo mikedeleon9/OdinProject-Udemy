@@ -9,7 +9,7 @@
 main{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 4fr;
    
 }
 
@@ -129,9 +129,13 @@ button{
 
 .projects-title {
   grid-column: 1 / -1; /* Span across all columns */
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   
+}
+
+.announcement-title{
+  grid-column: 1 / -1;
 }
 .main-content{
   display: grid;
@@ -141,10 +145,11 @@ button{
  
 }
 
-.main-content > .box{
+.box{
   background: white;
   border-radius: 0.7rem;
   border-left: 0.6rem solid rgb(219, 192, 39);
+  padding: 2rem 1rem;
 }
 
 .main-container{
@@ -153,13 +158,14 @@ button{
   grid-template-columns: 4fr 1fr;
    grid-template-rows: auto 1fr;
   background: #e1e2e8;
-  padding: 4rem 2rem;
+  padding: 2rem;
   gap: 1.5rem;
 }
 
 .side{
   display: grid;
   grid-template-columns: 1fr;
+  
   gap: 3rem;
 }
 
@@ -167,7 +173,17 @@ button{
   grid-template-rows: 1fr 1fr;
   background: white;
   border-radius: 0.7rem;
-  border-left: 0.6rem solid gold;
+  
+}
+
+.announce{
+  position: absolute;
+  top: 220px;
+}
+
+.trend{
+  position: absolute;
+  top: 655px;
 }
 
 .card{
