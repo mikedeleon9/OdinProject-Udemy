@@ -127,23 +127,31 @@ button{
   font-size: 1.4rem;
 }
 
+.projects-title {
+  grid-column: 1 / -1; /* Span across all columns */
+  font-size: 1.4rem;
+  font-weight: bold;
+  
+}
 .main-content{
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2rem;
-  height: 100vh;
+ 
 }
 
-.main-content > div{
-  bordeR: 2px solid black;
-  
+.main-content > .box{
+  background: white;
+  border-radius: 0.7rem;
+  border-left: 0.6rem solid rgb(219, 192, 39);
 }
 
 .main-container{
-  
+
   display: grid;
   grid-template-columns: 4fr 1fr;
+   grid-template-rows: auto 1fr;
   background: #e1e2e8;
   padding: 4rem 2rem;
   gap: 1.5rem;
@@ -157,7 +165,9 @@ button{
 
 .side > div{
   grid-template-rows: 1fr 1fr;
-  border: 2px solid green;
+  background: white;
+  border-radius: 0.7rem;
+  border-left: 0.6rem solid gold;
 }
 
 .card{
