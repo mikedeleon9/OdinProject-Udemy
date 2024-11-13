@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    padding: 1rem 4rem;
+    
+}
+
+.desserts-container{
+ display: grid;
+ grid-template-columns: repeat(3, auto);
+ padding: 2rem;
+ gap: 1rem;
+}
+
+.dessert-item{
+    
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+    height: 100%;
+    padding: 1rem;
+}
+
+.cart-container{
+   
+}
+
+.dessert-item > img{
+    max-width: 300px;
+    border-radius: 1rem;
+}
