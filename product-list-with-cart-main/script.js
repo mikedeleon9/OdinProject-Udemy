@@ -36,19 +36,25 @@ fetch('./data.json')
         button.addEventListener('click', () => {
             numberOfItemsInCart++;
            const dessertName = button.closest('.dessert-item').querySelector('.dessert-name').textContent;
-            updateCart(dessertName);
+           const dessertPrice = button.closest('.dessert-item').querySelector('.pricing').textContent;
+           updateCart(dessertName, dessertPrice);
+            
            
         })
     })
 
 
-    function updateCart(dessert){
+    function updateCart(dessert, price){
         const cartInnerContainer = document.querySelector('.cart-inner-container');
         const emptyImage = document.querySelector('.empty-brownie-image');
        
         emptyImage.style.display = 'none';
-        const cartItem = document.createElement('p');
-        cartItem.textContent = dessert;
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cartItem');
+        cartItem.innerHTML = `
+            <p>${dessert}</p>
+            <p>${price}</p>
+        `
         
         cartInnerContainer.appendChild(cartItem)
     }

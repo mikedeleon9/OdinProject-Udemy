@@ -109,9 +109,16 @@ h1{
     border: 2px solid red;
     margin: 0 1rem;
     flex-direction: column;
-    align-items: center;
+   
+    padding: 0.5rem;
 }
 
 .empty-brownie-image{
     display: block;
+}
+
+.cartItem{
+   
+    display: flex;
+    flex-direction: column;
 }
