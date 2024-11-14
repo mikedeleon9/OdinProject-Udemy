@@ -10,9 +10,10 @@ fetch('./data.json')
         dessertSquare.className = 'dessert-item';
         dessertSquare.innerHTML = `
           <img src="${dessert.image.desktop}" /> 
-          <p>${dessert.category}</p> 
-          <p>${dessert.name}</p>
-        
+         
+          <p class="category">${dessert.category}</p> 
+          <p class="dessert-name">${dessert.name}</p>
+          <p class="pricing">$${dessert.price.toFixed(2)}</p>
         `
         dessertContainer.appendChild(dessertSquare)
     })

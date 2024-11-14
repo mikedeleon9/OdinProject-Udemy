@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Red Hat Text", serif;
+    --red: hsl(14, 86%, 42%);
 }
 
 body{
@@ -14,7 +16,7 @@ body{
    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.2rem;
     padding: 1rem 2rem;
 }
 
@@ -25,23 +27,36 @@ body{
 }
 
 .dessert-item{
-   
+  
    display: flex;
    flex-direction: column;
-   
-   
-    
+   margin: 0;
 }
 
 
 .dessert-item img{
   
  max-height: 200px;
-  
  border-radius: 0.5rem;
 }
 
-.cart-container{
-    
+h1{
+    font-weight: 700;
+}
+.dessert-name{
+   font-weight: 500;
+   margin: 0;
 }
 
+.category{
+    font-size: 14px;
+    color: grey;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.pricing{
+    margin: 0;
+    color: var(--red);
+    font-weight: 500;
+}
