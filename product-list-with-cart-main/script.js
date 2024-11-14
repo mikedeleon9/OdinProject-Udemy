@@ -1,7 +1,7 @@
 const dessertContainer = document.querySelector('.desserts-container');
 const cartContainer = document.querySelector('.cart-container')
 let numberOfItemsInCart = 0;
-
+let cartArray = [];
 
 
 fetch('./data.json')
@@ -30,33 +30,44 @@ fetch('./data.json')
         </div>
         `
 
-    //Changing the Text of Add to Cart Button when Clicked
+    //Adding button functionality
     const addToCartButton = document.querySelectorAll('.add-to-cart-button');
     addToCartButton.forEach((button, index) => {
+        let timesClicked = 0;
+        
         button.addEventListener('click', () => {
             numberOfItemsInCart++;
+            timesClicked++;
+            
            const dessertName = button.closest('.dessert-item').querySelector('.dessert-name').textContent;
            const dessertPrice = button.closest('.dessert-item').querySelector('.pricing').textContent;
-           updateCart(dessertName, dessertPrice);
+
+           cartArray.push(dessertName);
+           console.log(cartArray)
+           
+           updateCart(dessertName, dessertPrice, timesClicked);
             
            
         })
     })
 
 
-    function updateCart(dessert, price){
+    function updateCart(dessert, price, timesClicked){
         const cartInnerContainer = document.querySelector('.cart-inner-container');
         const emptyImage = document.querySelector('.empty-brownie-image');
+       
        
         emptyImage.style.display = 'none';
         const cartItem = document.createElement('div');
         cartItem.classList.add('cartItem');
+       
         cartItem.innerHTML = `
             <p>${dessert}</p>
-            <p>${price}</p>
+            <span>${timesClicked}x</span><p>@${price}</p>
         `
         
         cartInnerContainer.appendChild(cartItem)
+        
     }
     
 })
