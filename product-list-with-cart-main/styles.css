@@ -106,7 +106,6 @@ h1{
 .cart-inner-container{
     display: flex;
     justify-content: center;
-    border: 2px solid red;
     margin: 0 1rem;
     flex-direction: column;
    
