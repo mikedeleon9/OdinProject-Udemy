@@ -90,5 +90,10 @@ h1{
     width: 350px;
     background: white;
     overflow: hidden;
+    
 }
 
+.yourCartTexth3{
+    color: var(--red);
+    padding: 1rem;
+}
