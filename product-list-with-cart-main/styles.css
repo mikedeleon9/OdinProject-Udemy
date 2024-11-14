@@ -61,7 +61,7 @@ h1{
     font-weight: 500;
 }
 
-.add-to-cart{
+.add-to-cart-button{
     width: 65%;  
     border: 1px solid black;
     color: black;
@@ -70,7 +70,7 @@ h1{
     bottom: 80px;
     position: absolute;
     align-self: center;
-    padding:  0.5rem;
+    padding:  0.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,20 +80,30 @@ h1{
     cursor: pointer;
 }
 
+.add-to-cart-button:hover{
+    background: #eee;
+}
+
 .card-text{
     font-size: 10px;
 }
 
 .cart-container{
-    min-height: 300px;
+    min-height: 250px;
     max-height: none; 
     width: 350px;
     background: white;
     overflow: hidden;
+    border-radius: 10px;
     
 }
 
 .yourCartTexth3{
     color: var(--red);
     padding: 1rem;
+}
+
+.cart-inner-container{
+    display: flex;
+    justify-content: center;
 }
