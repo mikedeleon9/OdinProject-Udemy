@@ -27,12 +27,15 @@ body{
 }
 
 .dessert-item{
-    position: relative;
+   position: relative;
    display: flex;
    flex-direction: column;
    margin: 0;
 }
 
+.dessert-item:focus{
+    border: 2px solid red;
+}
 
 .dessert-item img{
  position: relative;
