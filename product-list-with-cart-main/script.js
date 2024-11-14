@@ -1,6 +1,9 @@
 const dessertContainer = document.querySelector('.desserts-container');
 const cartContainer = document.querySelector('.cart-container')
 let numberOfItemsInCart = 0;
+
+
+
 fetch('./data.json')
 .then(response => response.json())
 .then(data => {
@@ -31,22 +34,24 @@ fetch('./data.json')
     const addToCartButton = document.querySelectorAll('.add-to-cart-button');
     addToCartButton.forEach((button, index) => {
         button.addEventListener('click', () => {
-           const cartInnerContainer = document.querySelector('.cart-inner-container');
+            numberOfItemsInCart++;
            const dessertName = button.closest('.dessert-item').querySelector('.dessert-name').textContent;
-            
-           numberOfItemsInCart++;
-        
-           if(numberOfItemsInCart > 0) {
-                const brownieImage= document.querySelector('.empty-brownie-image');
-               
-                cartInnerContainer.innerHTML += `<p>${dessertName}</p>`
-           }
-           
-          
-        
+            updateCart(dessertName);
            
         })
     })
+
+
+    function updateCart(dessert){
+        const cartInnerContainer = document.querySelector('.cart-inner-container');
+        const emptyImage = document.querySelector('.empty-brownie-image');
+       
+        emptyImage.style.display = 'none';
+        const cartItem = document.createElement('p');
+        cartItem.textContent = dessert;
+        
+        cartInnerContainer.appendChild(cartItem)
+    }
     
 })
 .catch(error => console.error('Error loading JSON:', error))
