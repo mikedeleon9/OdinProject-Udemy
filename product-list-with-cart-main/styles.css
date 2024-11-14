@@ -27,7 +27,7 @@ body{
 }
 
 .dessert-item{
-  
+    position: relative;
    display: flex;
    flex-direction: column;
    margin: 0;
@@ -35,7 +35,7 @@ body{
 
 
 .dessert-item img{
-  
+ position: relative;
  max-height: 200px;
  border-radius: 0.5rem;
 }
@@ -59,4 +59,27 @@ h1{
     margin: 0;
     color: var(--red);
     font-weight: 500;
+}
+
+.add-to-cart{
+    width: 70%;  
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    bottom: 80px;
+    position: absolute;
+    align-self: center;
+    padding:  0.5rem 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.card-text{
+    font-size: 10px;
 }
