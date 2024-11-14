@@ -1,5 +1,6 @@
 const dessertContainer = document.querySelector('.desserts-container');
-
+const cartContainer = document.querySelector('.cart-container')
+let numberOfItemsInCart = 0;
 fetch('./data.json')
 .then(response => response.json())
 .then(data => {
@@ -15,7 +16,20 @@ fetch('./data.json')
           <p class="dessert-name">${dessert.name}</p>
           <p class="pricing">$${dessert.price.toFixed(2)}</p>
         `
-        dessertContainer.appendChild(dessertSquare)
+        dessertContainer.appendChild(dessertSquare);
+        
+    })
+    //Adding H2 Add To Cart to Your Cart
+    const yourCartText = document.createElement('h2');
+    yourCartText.textContent = `Your Cart (${numberOfItemsInCart})`;
+    cartContainer.appendChild(yourCartText)
+
+    //Changing the Text of Add to Cart Button when Clicked
+    const addToCartButton = document.querySelectorAll('.add-to-cart');
+    addToCartButton.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            
+        })
     })
     
 })

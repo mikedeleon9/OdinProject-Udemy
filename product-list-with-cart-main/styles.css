@@ -7,13 +7,13 @@
 }
 
 body{
-  
+    background: hsl(13, 31%, 94%);
     padding: 4rem 5rem;
-    background: hsl(20, 50%, 98%);
+   
     
 }
 .desserts-container{
-   
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
@@ -21,9 +21,9 @@ body{
 }
 
 .main{
-    
-    
+    justify-content: center;
    display: flex;
+   align-items: flex-start;
 }
 
 .dessert-item{
@@ -83,3 +83,12 @@ h1{
 .card-text{
     font-size: 10px;
 }
+
+.cart-container{
+    min-height: 300px;
+    max-height: none; 
+    width: 350px;
+    background: white;
+    overflow: hidden;
+}
+
