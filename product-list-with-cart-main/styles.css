@@ -128,4 +128,27 @@ h1{
 .buttonIsClicked{
     background-color: var(--red);
     color: white;
+    display: flex;
+   
+}
+
+.buttonIsClicked:hover{
+    background: hsl(14, 86%, 35%);
+   
+}
+
+.circle{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickedButton{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
