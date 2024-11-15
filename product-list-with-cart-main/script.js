@@ -2,7 +2,7 @@ const dessertContainer = document.querySelector('.desserts-container');
 const cartContainer = document.querySelector('.cart-container')
 let numberOfItemsInCart = 0;
 let cartArray = [];
-
+let buttonClicked = false;
 
 fetch('./data.json')
 .then(response => response.json())
@@ -33,15 +33,21 @@ fetch('./data.json')
     //Adding button functionality
     const addToCartButton = document.querySelectorAll('.add-to-cart-button');
     addToCartButton.forEach((button, index) => {
-        
-        
+
         button.addEventListener('click', () => {
            const dessertName = button.closest('.dessert-item').querySelector('.dessert-name').textContent;
            const dessertPrice = button.closest('.dessert-item').querySelector('.pricing').textContent;
+           
 
         if(!cartArray.includes(dessertName)){
             cartArray.push(dessertName);
             numberOfItemsInCart++;
+            buttonClicked = true;
+
+            if(buttonClicked){
+                button.classList.add('buttonIsClicked');
+                
+            }
 
             updateCart(dessertName, dessertPrice);
         }
