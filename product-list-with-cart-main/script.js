@@ -33,37 +33,37 @@ fetch('./data.json')
     //Adding button functionality
     const addToCartButton = document.querySelectorAll('.add-to-cart-button');
     addToCartButton.forEach((button, index) => {
-        let timesClicked = 0;
+        
         
         button.addEventListener('click', () => {
-            numberOfItemsInCart++;
-            timesClicked++;
-            
            const dessertName = button.closest('.dessert-item').querySelector('.dessert-name').textContent;
            const dessertPrice = button.closest('.dessert-item').querySelector('.pricing').textContent;
 
-           cartArray.push(dessertName);
-           console.log(cartArray)
-           
-           updateCart(dessertName, dessertPrice, timesClicked);
-            
-           
+        if(!cartArray.includes(dessertName)){
+            cartArray.push(dessertName);
+            numberOfItemsInCart++;
+
+            updateCart(dessertName, dessertPrice);
+        }
         })
     })
 
 
-    function updateCart(dessert, price, timesClicked){
+    function updateCart(dessert, price){
         const cartInnerContainer = document.querySelector('.cart-inner-container');
         const emptyImage = document.querySelector('.empty-brownie-image');
        
+
        
         emptyImage.style.display = 'none';
         const cartItem = document.createElement('div');
         cartItem.classList.add('cartItem');
+
+        document.querySelector('.yourCartTexth3').textContent = `Your Cart(${numberOfItemsInCart})`;
        
         cartItem.innerHTML = `
             <p>${dessert}</p>
-            <span>${timesClicked}x</span><p>@${price}</p>
+            <p>@${price}</p>
         `
         
         cartInnerContainer.appendChild(cartItem)
