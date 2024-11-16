@@ -3,7 +3,7 @@ const cartContainer = document.querySelector('.cart-container')
 let numberOfItemsInCart = 0;
 let cartArray = [];
 let buttonClicked = false;
-
+let orderNumber = 5;
 
 fetch('./data.json')
 .then(response => response.json())
@@ -52,7 +52,7 @@ fetch('./data.json')
                 <div class="circle">
                 <svg class="decreaseOrder" xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg>
                 </div>
-                <span class="quantity-ordered">0</span>
+                <span class="quantity-ordered">${orderNumber}</span>
                 <div class="circle">
                <svg class="increaseOrder" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
                 </div>
@@ -64,10 +64,13 @@ fetch('./data.json')
             const decreaseButton = document.querySelector('.decreaseOrder');
             const increaseButton = document.querySelector('.increaseOrder');
             const quantityOrdered = document.querySelector('.quantity-ordered');
-            let orderNumber = 0;
+           
 
             decreaseButton.addEventListener('click', () => {
-                
+                if(orderNumber > 0){
+                   orderNumber--;
+                   quantityOrdered.textContent = orderNumber;
+                }
             })
 
             updateCart(dessertName, dessertPrice);
