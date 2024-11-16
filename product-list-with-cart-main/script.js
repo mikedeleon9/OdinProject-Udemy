@@ -3,7 +3,7 @@ const cartContainer = document.querySelector('.cart-container')
 let numberOfItemsInCart = 0;
 let cartArray = [];
 let buttonClicked = false;
-let orderNumber = 5;
+let orderNumber = 0;
 
 fetch('./data.json')
 .then(response => response.json())
@@ -71,6 +71,12 @@ fetch('./data.json')
                    orderNumber--;
                    quantityOrdered.textContent = orderNumber;
                 }
+            });
+
+            increaseButton.addEventListener('click', () => {
+                    orderNumber++;
+                    quantityOrdered.textContent = orderNumber;
+                
             })
 
             updateCart(dessertName, dessertPrice);
