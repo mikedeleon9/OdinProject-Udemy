@@ -9,6 +9,7 @@ fetch('./data.json')
 .then(response => response.json())
 .then(data => {
     
+   
     
     data.forEach((dessert, index) =>{
         const dessertSquare = document.createElement('div');
@@ -39,13 +40,12 @@ fetch('./data.json')
            const dessertName = button.closest('.dessert-item').querySelector('.dessert-name').textContent;
            const dessertPrice = button.closest('.dessert-item').querySelector('.pricing').textContent;
            
+         
 
         if(!cartArray.includes(dessertName)){
             cartArray.push(dessertName);
             numberOfItemsInCart++;
             
-            
-
            
                 button.classList.add('buttonIsClicked');
                 button.innerHTML = `
@@ -108,19 +108,32 @@ fetch('./data.json')
             emptyImage.style.display = 'none';
         }
        
-       
-        const cartItem = document.createElement('div');
-        cartItem.classList.add('cartItem');
+       cartArray.forEach(item => {
 
-        document.querySelector('.yourCartTexth3').textContent = `Your Cart(${numberOfItemsInCart})`;
-       
-        cartItem.innerHTML = `
-            
+        const innerContainerArray = Array.from(cartInnerContainer);
+
+        if(!innerContainerArray.some(child => child.textContent === item)){
+
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cartItem');
+    
+            cartItem.innerHTML = `
+                
             <p>${dessert}</p>
             <p>@${price}</p>
         `
-        
         cartInnerContainer.appendChild(cartItem)
+        }
+      
+       })
+       
+       
+
+        document.querySelector('.yourCartTexth3').textContent = `Your Cart(${numberOfItemsInCart})`;
+       
+       
+        
+       
         
     }
     
