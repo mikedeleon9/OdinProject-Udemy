@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", serif;
+    --red: hsl(14, 86%, 42%);
+}
+
+body{
+    background: hsl(13, 31%, 94%);
+    padding: 4rem 5rem;
+   
+    
+}
+.desserts-container{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+.main{
+    justify-content: center;
+   display: flex;
+   align-items: flex-start;
+}
+
+.dessert-item{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+}
+
+.dessert-item:focus{
+    border: 2px solid red;
+}
+
+.dessert-item img{
+ position: relative;
+ max-height: 200px;
+ border-radius: 0.5rem;
+}
+
+h1{
+    font-weight: 700;
+}
+.dessert-name{
+   font-weight: 500;
+   margin: 0;
+}
+
+.category{
+    font-size: 14px;
+    color: grey;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.pricing{
+    margin: 0;
+    color: var(--red);
+    font-weight: 500;
+}
+
+.add-to-cart-button{
+    width: 65%;  
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    bottom: 80px;
+    position: absolute;
+    align-self: center;
+    padding:  0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover{
+    background: #eee;
+}
+
+.card-text{
+    font-size: 10px;
+}
+
+.cart-container{
+    min-height: 250px;
+    max-height: none; 
+    width: 350px;
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.yourCartTexth3{
+    color: var(--red);
+    padding: 1rem;
+}
+
+.cart-inner-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem;
+    flex-direction: column;
+   
+    padding: 0.5rem;
+}
+
+.empty-brownie-image{
+    display: block;
+}
+
+.cartItem{
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonIsClicked{
+    background-color: var(--red);
+    color: white;
+    display: flex;
+   
+}
+
+.buttonIsClicked:hover{
+    background: hsl(14, 86%, 35%);
+   
+}
+
+.circle{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickedButton{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
