@@ -34,6 +34,27 @@ ul{
     width: 3rem;
 }
 
+.left-main{
+    
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.big-image{
+    width: 450px;
+    border-radius: 1rem;
+}
+
+.smaller-images-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.smaller-images{
+    width: 90px;
+    border-radius: 1rem;
+}
 
 
