@@ -39,13 +39,12 @@ minusButton.addEventListener('click', () => {
 //Creating Modal that appears when larger image is clicked
 
 mainImage.addEventListener('click', () =>{
-    
    const modalDiv = document.querySelector('.modal-div');
    const modalOverlay = document.querySelector('.modal-overlay');
    modalDiv.style.display = "flex";
    modalOverlay.style.display = "block";
-   
-})
+   bigImageIndex = 0;
+});
 
 // Close modal when clicking on the overlay
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -53,4 +52,30 @@ modalOverlay.addEventListener('click', () => {
   const modalDiv = document.querySelector('.modal-div');
   modalOverlay.style.display = "none";
   modalDiv.style.display = "none";
+  bigImageIndex = 0;
 });
+
+
+//Adding Next/Previous Button Functionality within modal
+
+const secondImages = document.querySelectorAll(".image-2");
+const secondMainImage = document.querySelector(".second-big-image");
+const previousButton = document.querySelector('.previous-icon-div');
+const nextButton = document.querySelector('.next-icon-div');
+let bigImageIndex = 0;
+
+previousButton.addEventListener('click', ()=> {
+    if(bigImageIndex >=1){
+    bigImageIndex--
+    secondMainImage.src = `./images/image-product-${bigImageIndex +1 }.jpg`
+    }
+    
+})
+
+nextButton.addEventListener('click', (index)=> {
+    if(bigImageIndex < 3){
+        bigImageIndex++;
+    secondMainImage.src = `./images/image-product-${bigImageIndex +1 }.jpg`
+    }
+    
+})
