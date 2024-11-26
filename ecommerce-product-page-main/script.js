@@ -79,3 +79,15 @@ nextButton.addEventListener('click', (index)=> {
     }
     
 })
+
+
+//Add to cart button functionality
+
+const addToCartButton = document.querySelector('.add-to-cart-button');
+const cartDiv = document.querySelector(".cart-div");
+
+addToCartButton.addEventListener('click', () => {
+    const cartBadge = document.createElement('span');
+    cartBadge.classList.add('cart-badge')
+    mainCart.appendChild(cartBadge)
+})

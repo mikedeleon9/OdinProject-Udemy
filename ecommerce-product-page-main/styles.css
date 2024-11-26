@@ -30,6 +30,7 @@ header{
 
 .right-header{
     cursor: pointer;
+
 }
 
 ul{
@@ -252,4 +253,11 @@ span{
 
 .second-big-image{
     cursor: auto;
+}
+
+.cart-badge{
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
 }
