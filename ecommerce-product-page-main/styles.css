@@ -18,7 +18,7 @@ header, .left-header, ul, .right-header{
 
 
 header{
-    margin: 0 12rem;
+    margin: 0 10rem;
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
 }
@@ -114,16 +114,19 @@ h3{
 .big-image{
     width: 450px;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .smaller-images-div{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .smaller-images{
     width: 90px;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .pricing-buttons{
