@@ -98,6 +98,11 @@ const showCart = document.querySelector('.show-cart-div');
 cartDiv.addEventListener('click', (event) => {
     event.stopPropagation();
     showCart.style.display = "block";
+    showCart.innerHTML = "Your Cart is Empty!"
+    if(itemNumbers > 0){
+         showCart.innerHTML = `(${itemNumbers}) Fall Limited Edition Sneakers`;
+    }
+   
 })
 
 showCart.addEventListener('click', (event) => {
