@@ -68,31 +68,26 @@ previousButton.addEventListener('click', ()=> {
     if(bigImageIndex >=1){
     bigImageIndex--
     secondMainImage.src = `./images/image-product-${bigImageIndex +1 }.jpg`
-    }
-    
-})
+    };
+});
 
 nextButton.addEventListener('click', (index)=> {
     if(bigImageIndex < 3){
         bigImageIndex++;
-    secondMainImage.src = `./images/image-product-${bigImageIndex +1 }.jpg`
-    }
-    
-})
+    secondMainImage.src = `./images/image-product-${bigImageIndex +1 }.jpg`;
+    };
+});
 
 
 //Add to cart button functionality
 const addToCartButton = document.querySelector('.add-to-cart-button');
 const cartDiv = document.querySelector(".cart-div");
 
-
 addToCartButton.addEventListener('click', () => {
-
     if(itemNumbers > 0) {
         const cartBadge = document.createElement('div');
         cartBadge.classList.add('cart-badge');
         cartBadge.textContent = itemNumbers;
         cartDiv.appendChild(cartBadge);
-    }
-
-})
+    };
+});
