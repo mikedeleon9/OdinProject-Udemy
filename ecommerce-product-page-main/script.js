@@ -42,7 +42,7 @@ mainImage.addEventListener('click', () =>{
     
    const modalDiv = document.querySelector('.modal-div');
    const modalOverlay = document.querySelector('.modal-overlay');
-   modalDiv.style.display = "block";
+   modalDiv.style.display = "flex";
    modalOverlay.style.display = "block";
    
 })

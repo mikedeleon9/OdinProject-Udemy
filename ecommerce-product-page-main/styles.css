@@ -119,7 +119,7 @@ h3{
     cursor: pointer;
 }
 
-.big-image:hover{
+.left-main > .big-image:hover{
     opacity: 0.9;
 }
 
@@ -208,8 +208,29 @@ span{
 .modal-div{
     display: none;
     position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the modal */
     z-index: 2;
 }
+
+.previous-icon-div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow{
+    width: 25%;
+}
+
