@@ -18,8 +18,16 @@ images.forEach((image, index) => {
 const plusButton = document.querySelector('.plus');
 const minusButton = document.querySelector('.minus');
 const numberOfItems = document.querySelector('.number-of-items');
-const itemNumbers = 0;
+let itemNumbers = 0;
 
 plusButton.addEventListener('click', ()=> {
-    
+    itemNumbers++;
+    numberOfItems.textContent = itemNumbers;
+});
+
+minusButton.addEventListener('click', () => {
+    if(itemNumbers > 0){
+        itemNumbers--;
+        numberOfItems.textContent = itemNumbers;
+    }
 })
