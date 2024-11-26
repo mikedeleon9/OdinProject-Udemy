@@ -13,3 +13,13 @@ images.forEach((image, index) => {
         mainImage.src = `./images/image-product-${index +1 }.jpg`
     })
 })
+
+
+const plusButton = document.querySelector('.plus');
+const minusButton = document.querySelector('.minus');
+const numberOfItems = document.querySelector('.number-of-items');
+const itemNumbers = 0;
+
+plusButton.addEventListener('click', ()=> {
+    
+})

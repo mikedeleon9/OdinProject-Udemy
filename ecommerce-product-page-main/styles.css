@@ -118,6 +118,10 @@ h3{
     cursor: pointer;
 }
 
+.big-image:hover{
+    opacity: 0.9;
+}
+
 .smaller-images-div{
     display: flex;
     justify-content: space-between;
@@ -173,4 +177,8 @@ span{
 
 .plus, .minus{
     cursor: pointer;
+}
+
+.plus:hover, .minus:hover{
+    opacity: 0.9;
 }
