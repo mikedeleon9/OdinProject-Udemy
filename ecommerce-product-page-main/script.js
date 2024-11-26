@@ -1,6 +1,8 @@
 //Adding Functionality to cycle through the smaller images
 const images = document.querySelectorAll('.image');
 const mainImage = document.querySelector('.big-image');
+const mainSection = document.querySelector('.main-section');
+
 
 images.forEach((image, index) => {
     image.addEventListener('click', ()=>{
@@ -35,3 +37,20 @@ minusButton.addEventListener('click', () => {
 });
 
 //Creating Modal that appears when larger image is clicked
+
+mainImage.addEventListener('click', () =>{
+    
+   const modalDiv = document.querySelector('.modal-div');
+   const modalOverlay = document.querySelector('.modal-overlay');
+   modalDiv.style.display = "block";
+   modalOverlay.style.display = "block";
+   
+})
+
+// Close modal when clicking on the overlay
+const modalOverlay = document.querySelector('.modal-overlay');
+modalOverlay.addEventListener('click', () => {
+  const modalDiv = document.querySelector('.modal-div');
+  modalOverlay.style.display = "none";
+  modalDiv.style.display = "none";
+});
