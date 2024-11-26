@@ -8,6 +8,7 @@
 h2{
     font-weight: 700;
     font-size: 2.2rem;
+    cursor: pointer;
 }
 
 header, .left-header, ul, .right-header{
@@ -27,11 +28,16 @@ header{
     gap: 2.2rem;
 }
 
+.right-header{
+    cursor: pointer;
+}
+
 ul{
     list-style-type: none;
     gap: 1rem;
     font-size: 1rem;
     color: grey;
+    cursor: pointer;
 }
 
 .avatar-icon{
@@ -154,5 +160,13 @@ span{
     color: black;
     gap: 0.5rem;
     font-weight: 700;
+    cursor: pointer;
 }
 
+.add-to-cart-button:hover{
+    background: hsla(26, 100%, 55%, 0.849);
+}
+
+.plus, .minus{
+    cursor: pointer;
+}
