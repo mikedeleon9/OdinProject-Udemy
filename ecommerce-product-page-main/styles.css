@@ -1,5 +1,8 @@
 *{
     font-family: "Kumbh Sans", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    --dark-gray: hsl(219, 9%, 45%);
 }
 
 h2{
@@ -38,6 +41,9 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem;
+    margin: 0 10rem;
+    gap: 8rem;
 }
 
 .left-main{
@@ -46,6 +52,56 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.right-main{
+    
+    height: 500px;
+    width: 500px;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.sneaker-title{
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.description{
+    width: 85%;
+    color: grey;
+}
+
+.pricing-div{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0;
+    
+    gap: 1rem;
+}
+
+h3{
+    font-size: 1.8rem;
+    margin: 0
+}
+
+
+span{
+    background: black;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    
+}
+.strikethrough-price{
+    text-decoration:line-through ;
+    color: var(--dark-gray);
+    font-weight: 700;
 }
 
 .big-image{
