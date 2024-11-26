@@ -82,9 +82,9 @@ nextButton.addEventListener('click', (index)=> {
 
 
 //Add to cart button functionality
-
 const addToCartButton = document.querySelector('.add-to-cart-button');
 const cartDiv = document.querySelector(".cart-div");
+
 
 addToCartButton.addEventListener('click', () => {
 
@@ -93,9 +93,6 @@ addToCartButton.addEventListener('click', () => {
         cartBadge.classList.add('cart-badge');
         cartBadge.textContent = itemNumbers;
         cartDiv.appendChild(cartBadge);
-
     }
-   
-
 
 })
