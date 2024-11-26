@@ -211,7 +211,7 @@ span{
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the modal */
     z-index: 2;
@@ -228,6 +228,22 @@ span{
     position: absolute;
     top: 40%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.next-icon-div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translate(50%, -50%);
+    cursor: pointer;
 }
 
 .arrow{
