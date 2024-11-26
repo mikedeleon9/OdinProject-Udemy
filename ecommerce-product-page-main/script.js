@@ -87,7 +87,15 @@ const addToCartButton = document.querySelector('.add-to-cart-button');
 const cartDiv = document.querySelector(".cart-div");
 
 addToCartButton.addEventListener('click', () => {
-    const cartBadge = document.createElement('span');
-    cartBadge.classList.add('cart-badge')
-    mainCart.appendChild(cartBadge)
+
+    if(itemNumbers > 0) {
+        const cartBadge = document.createElement('div');
+        cartBadge.classList.add('cart-badge');
+        cartBadge.textContent = itemNumbers;
+        cartDiv.appendChild(cartBadge);
+
+    }
+   
+
+
 })

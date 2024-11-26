@@ -255,9 +255,22 @@ span{
     cursor: auto;
 }
 
+.cart-div{
+    position: relative;
+}
+
 .cart-badge{
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background: red;
     border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
 }
