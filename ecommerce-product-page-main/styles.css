@@ -7,7 +7,7 @@
 
 h2{
     font-weight: 700;
-    font-size: 1.9rem;
+    font-size: 2.2rem;
 }
 
 header, .left-header, ul, .right-header{
@@ -22,14 +22,15 @@ header{
     border-bottom: 1px solid lightgray;
 }
 
-.right-header{
-    gap: 2rem;
+
+.right-header, .left-header{
+    gap: 2.2rem;
 }
 
 ul{
     list-style-type: none;
     gap: 1rem;
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: grey;
 }
 
@@ -90,7 +91,7 @@ h3{
 }
 
 
-span{
+.percent{
     background: black;
     color: white;
     padding: 0.2rem 0.6rem;
@@ -119,4 +120,39 @@ span{
     border-radius: 1rem;
 }
 
+.pricing-buttons{
+    margin-top: 2rem;
+    display: flex;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.quantity-button{
+    background-color: hsla(221, 61%, 90%, 0.24);
+    width: 9rem;
+    height: 3.2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+    
+}
+
+span{
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.add-to-cart-button{
+    background: hsl(26, 100%, 55%);
+    width: 16rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 0.5rem;
+    font-weight: 700;
+}
 
