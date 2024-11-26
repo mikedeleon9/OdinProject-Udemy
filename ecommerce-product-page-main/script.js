@@ -91,3 +91,21 @@ addToCartButton.addEventListener('click', () => {
         cartDiv.appendChild(cartBadge);
     };
 });
+
+//Creating Cart and Items in it
+const showCart = document.querySelector('.show-cart-div');
+
+cartDiv.addEventListener('click', (event) => {
+    event.stopPropagation();
+    showCart.style.display = "block";
+})
+
+showCart.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent hiding when clicking inside the popup
+});
+
+document.addEventListener('click', (event) => {
+    if (!showCart.contains(event.target) && !cartDiv.contains(event.target)) {
+        showCart.style.display = "none";
+    }
+});

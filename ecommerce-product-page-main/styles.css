@@ -279,10 +279,11 @@ span{
 .show-cart-div{
     display: none;
     border: 2px solid black;
-    width: 100px;
+    width: 150px;
     left: 0;
-    transform: translate(-80%, -2%);
-    height: 150px;
+    transform: translate(-90%, -2%);
+    height: 200px;
+    z-index: 12;
     position: absolute;
    
 }
