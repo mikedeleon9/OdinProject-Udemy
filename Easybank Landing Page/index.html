@@ -7,10 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
+<body class="">
+    <header class="flex justify-between px-16 h-16">
         <h2>easybank</h2>
-        <ul>
+        <ul class="flex">
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
@@ -19,8 +19,12 @@
         </ul>
         <button>Request Invite</button>
     </header>
-    <div class="main-content"></div>
-    <footer></footer>
+
+    <div class="main-content flex w-full">
+        <div class="main-left border-2 border-blue-400 w-full"></div>
+         <div class="main-right w-full"></div>
+    </div>
+    <footer class=""></footer>
 <script src="script.js"></script>
 </body>
 </html>
