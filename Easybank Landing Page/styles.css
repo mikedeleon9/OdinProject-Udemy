@@ -19,15 +19,14 @@ body{
 .main-right{
    
     background-image: url('./images/bg-intro-desktop.svg');
-    background-position: cover;
+    height: 80%;
     background-repeat: no-repeat;
-    
     overflow: hidden;
    
 }
 
 .main-left{
-    width: 80%;
+    
 }
 
 .main-content > img{
