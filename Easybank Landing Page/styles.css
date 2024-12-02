@@ -12,25 +12,28 @@ body{
 .main-content{
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: 90vh;
 }
 
 
 .main-right{
-   
+    height: 100%;
     background-image: url('./images/bg-intro-desktop.svg');
-    height: 80%;
     background-repeat: no-repeat;
-    overflow: hidden;
-   
+    overflow: hidden;;
+    
+    background-position: 40% 80%;
+    position: relative; /* Ensures no unwanted movement */
+    top: 0;
 }
 
 .main-left{
     
 }
 
-.main-content > img{
+.main-right > img{
     position: absolute;
     right: 0;
-    transform: translate(15%, 0%);
+    
+    
 }
