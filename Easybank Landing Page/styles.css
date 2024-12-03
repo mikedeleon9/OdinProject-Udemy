@@ -49,3 +49,9 @@ body{
 .invite:hover{
     filter: brightness(90%);
 }
+
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
