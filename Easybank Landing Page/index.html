@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="">
-    <header class="flex justify-between  h-20 py-6 px-8 sm:px-44">
+    <header class="flex justify-between items-center h-20 py-8 px-8 sm:px-44">
        
             <img class="w-42 h-6" src="./images/logo.svg" alt="">
            
@@ -23,24 +23,24 @@
             <li>Blog</li>
             <li>Careers</li>
         </ul>
-        <button class="hidden sm:flex">Request Invite</button>
+        <button class="hidden sm:block invite">Request Invite</button>
         <img src="./images/icon-hamburger.svg" alt="burger-menu" class="block sm:hidden w-8 h-4">
     </header>
 
-    <div class="main-content flex flex-col sm:flex-row justify-center items-center p-0 sm:px-16">
+    <div class="main-content flex flex-col sm:flex-row justify-center items-center ">
        
             <div class="main-left order-2 sm:order-1 flex items-center justify-center w-full sm:w-3/5">
-                <div class="text-div w-full sm:w-3/6 border-2">
+                <div class="text-div w-full sm:w-3/6">
                     <h1 class="text-5xl">Next generation digital banking</h1>
                     <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing and much more.</p>
-                    <button>Request invite</button>
+                    <button class="invite">Request invite</button>
 
                 </div>
                 
             </div>
         
            
-            <div class="main-right order-1 sm:order-2 w-full border-2 h-full">
+            <div class="main-right order-1 sm:order-2 w-full h-full">
                 <img src="./images/image-mockups.png" alt="phone-images">
             </div>
     </div>

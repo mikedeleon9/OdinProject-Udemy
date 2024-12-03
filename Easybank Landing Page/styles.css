@@ -21,8 +21,7 @@ body{
     background-image: url('./images/bg-intro-desktop.svg');
     background-repeat: no-repeat;
     overflow: hidden;;
-    
-    background-position: 40% 80%;
+    background-position: 10% 70%;
     position: relative; /* Ensures no unwanted movement */
     top: 0;
 }
@@ -34,6 +33,14 @@ body{
 .main-right > img{
     position: absolute;
     right: 0;
+    top: -50px;
     
-    
+}
+
+.invite{
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.4rem;
+    color: white;
+    font-size: 0.9rem;
 }
