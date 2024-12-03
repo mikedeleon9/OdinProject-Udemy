@@ -26,6 +26,7 @@ body{
     background-size: cover;
     position: relative; /* Ensures no unwanted movement */
     top: 0;
+    
 }
 
 .main-left{
@@ -35,7 +36,7 @@ body{
 .main-right > img{
     position: absolute;
     right: 0;
-    top: -40px;
+    
     
 }
 
