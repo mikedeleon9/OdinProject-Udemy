@@ -835,12 +835,12 @@ video {
   height: 1rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-auto {
   height: auto;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-8 {
@@ -1767,10 +1767,6 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -1901,12 +1897,12 @@ video {
           background-clip: text;
 }
 
-.bg-right-top {
-  background-position: right top;
-}
-
 .bg-right {
   background-position: right;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-repeat {
@@ -2555,7 +2551,7 @@ body{
   flex: 1;
 }
 
-.container{
+.main-content{
 }
 
 @media (min-width: 640px) {
@@ -2617,16 +2613,12 @@ body{
 }
 
 @media (min-width: 640px) {
-  .sm\:h-3\/4 {
-    height: 75%;
+  .sm\:h-4\/5 {
+    height: 80%;
   }
 
-  .sm\:h-screen {
-    height: 100vh;
-  }
-
-  .sm\:w-4\/6 {
-    width: 66.666667%;
+  .sm\:w-4\/5 {
+    width: 80%;
   }
 
   .sm\:flex-row {
@@ -2641,20 +2633,8 @@ body{
     background-image: url('../images/bg-intro-desktop.svg');
   }
 
-  .sm\:bg-\[position\:top_right_-100px\] {
-    background-position: top right -100px;
-  }
-
-  .sm\:bg-\[position\:top_right_-150px\] {
-    background-position: top right -150px;
-  }
-
-  .sm\:bg-\[position\:top-150px\] {
-    background-position: top-150px;
-  }
-
-  .sm\:bg-\[position\:top_-150px\] {
-    background-position: top -150px;
+  .sm\:bg-right {
+    background-position: right;
   }
 
   .sm\:px-0 {
