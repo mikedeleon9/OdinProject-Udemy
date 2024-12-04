@@ -11,7 +11,9 @@ module.exports = {
       'main-background': "url('../images/bg-intro-desktop.svg')",
       'mobile-background': "url('../images/bg-intro-mobile.svg')"
       },
-     
+      colors: {
+        'lightGray': 'hsl(0, 0%, 98%)',
+      }
     },
   },
   plugins: [],

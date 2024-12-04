@@ -663,6 +663,14 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -853,6 +861,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-3\/4 {
+  height: 75%;
+}
+
+.h-4\/5 {
+  height: 80%;
 }
 
 .w-8 {
@@ -1779,6 +1795,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -1845,10 +1865,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-main-background {
-  background-image: url('../images/bg-intro-desktop.svg');
 }
 
 .bg-mobile-background {
@@ -1992,6 +2008,10 @@ video {
 
 .pl-0 {
   padding-left: 0px;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
@@ -2538,22 +2558,12 @@ body{
 }
 
 .main-right{
-  height: 100%;
-  /*  background-image: url('./images/bg-intro-desktop.svg'); */
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position:  bottom;
   background-size: cover;
-  position: relative;
-  /* Ensures no unwanted movement */
-  top: 0;
-}
-
-.main-left{
 }
 
 .main-right > img{
-  position: absolute;
-  right: 0;
   top: -170px;
 }
 
@@ -2658,6 +2668,10 @@ body{
     width: 66.666667%;
   }
 
+  .sm\:w-3\/5 {
+    width: 60%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -2688,12 +2702,22 @@ body{
     padding-left: 6rem;
   }
 
+  .sm\:pt-28 {
+    padding-top: 7rem;
+  }
+
   .sm\:text-left {
     text-align: left;
   }
 
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-3\/5 {
+    width: 60%;
   }
 }
 

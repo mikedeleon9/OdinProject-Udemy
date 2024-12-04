@@ -21,18 +21,20 @@ body{
 
 
 .main-right{
-    height: 100%;
-  /*  background-image: url('./images/bg-intro-desktop.svg'); */
+   
+ 
     background-repeat: no-repeat;
     
-    background-position: left bottom;
+    background-position:  bottom;
     background-size: cover;
-    position: relative; /* Ensures no unwanted movement */
-   
+    
+
 }
 
 
-
+.main-right > img{
+    top: -170px;
+}
 
 
 .invite{
