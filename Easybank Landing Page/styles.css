@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,19 +15,17 @@ body{
 }
 
 .main-content{
-    position: relative;
-    border: 2px solid red;
-    height: 100%;
+    position: relative;  
     
 }
 
 
 .main-right{
     height: 100%;
-    background-image: url('./images/bg-intro-desktop.svg');
+  /*  background-image: url('./images/bg-intro-desktop.svg'); */
     background-repeat: no-repeat;
     
-    background-position: left;
+    background-position: left bottom;
     background-size: cover;
     position: relative; /* Ensures no unwanted movement */
     top: 0;
@@ -35,7 +38,7 @@ body{
 .main-right > img{
     position: absolute;
     right: 0;
-    top: -40px;
+    top: -170px;
     
 }
 
