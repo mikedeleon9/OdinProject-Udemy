@@ -1897,10 +1897,6 @@ video {
           background-clip: text;
 }
 
-.bg-right {
-  background-position: right;
-}
-
 .bg-top {
   background-position: top;
 }
@@ -2551,7 +2547,12 @@ body{
   flex: 1;
 }
 
-.main-content{
+.text-div{
+  max-width: 500px;
+}
+
+.text-gray-400{
+  max-width: 450px;
 }
 
 @media (min-width: 640px) {

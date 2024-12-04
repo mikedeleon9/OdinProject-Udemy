@@ -41,6 +41,10 @@ body{
     
 }
 
-.main-content{
-    
+.text-div{
+    max-width: 500px;
+}
+
+.text-gray-400{
+    max-width: 450px;
 }
