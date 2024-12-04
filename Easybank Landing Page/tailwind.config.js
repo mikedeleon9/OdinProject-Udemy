@@ -10,7 +10,6 @@ module.exports = {
       backgroundImage: {
       'main-background': "url('../images/bg-intro-desktop.svg')",
       'mobile-background': "url('../images/bg-intro-mobile.svg')"
-      
       },
      
     },
