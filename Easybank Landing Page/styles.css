@@ -28,19 +28,12 @@ body{
     background-position: left bottom;
     background-size: cover;
     position: relative; /* Ensures no unwanted movement */
-    top: 0;
+   
 }
 
-.main-left{
-    
-}
 
-.main-right > img{
-    position: absolute;
-    right: 0;
-    top: -170px;
-    
-}
+
+
 
 .invite{
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
