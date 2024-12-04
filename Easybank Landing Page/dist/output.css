@@ -855,20 +855,8 @@ video {
   height: 1rem;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-full {
   height: 100%;
-}
-
-.h-3\/4 {
-  height: 75%;
-}
-
-.h-4\/5 {
-  height: 80%;
 }
 
 .w-8 {
@@ -1857,6 +1845,11 @@ video {
   border-style: none;
 }
 
+.border-blue-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
@@ -2006,12 +1999,13 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pl-0 {
-  padding-left: 0px;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.pl-0 {
+  padding-left: 0px;
 }
 
 .text-left {
@@ -2551,6 +2545,9 @@ video {
 
 body{
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-content{
@@ -2559,7 +2556,7 @@ body{
 
 .main-right{
   background-repeat: no-repeat;
-  background-position:  bottom;
+  background-position: bottom -10% right 70%;
   background-size: cover;
 }
 
@@ -2578,7 +2575,11 @@ body{
 .category{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  flex: 1;
+  border: 2px solid red;
+  box-sizing: border-box;
 }
 
 @media (min-width: 640px) {
@@ -2648,28 +2649,16 @@ body{
     order: 2;
   }
 
-  .sm\:block {
-    display: block;
-  }
-
-  .sm\:flex {
-    display: flex;
-  }
-
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:h-3\/4 {
     height: 75%;
   }
 
-  .sm\:w-4\/6 {
-    width: 66.666667%;
-  }
-
   .sm\:w-3\/5 {
     width: 60%;
+  }
+
+  .sm\:w-4\/6 {
+    width: 66.666667%;
   }
 
   .sm\:flex-row {
@@ -2693,17 +2682,8 @@ body{
     padding-right: 0px;
   }
 
-  .sm\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
   .sm\:pl-24 {
     padding-left: 6rem;
-  }
-
-  .sm\:pt-28 {
-    padding-top: 7rem;
   }
 
   .sm\:text-left {
@@ -2716,12 +2696,20 @@ body{
 }
 
 @media (min-width: 768px) {
-  .md\:w-3\/5 {
-    width: 60%;
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 }
 
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2729,10 +2717,6 @@ body{
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:w-3\/5 {
-    width: 60%;
-  }
-
   .\32xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;

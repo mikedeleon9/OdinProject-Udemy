@@ -12,7 +12,12 @@
 
 body{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 
 .main-content{
     position: relative;  
@@ -25,7 +30,7 @@ body{
  
     background-repeat: no-repeat;
     
-    background-position:  bottom;
+    background-position: bottom -10% right 70%;
     background-size: cover;
     
 
@@ -48,5 +53,11 @@ body{
 .category{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex: 1;
+    border: 2px solid red;
+    box-sizing: border-box;
+    
+   
 }
