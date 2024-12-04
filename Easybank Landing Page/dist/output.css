@@ -675,14 +675,6 @@ video {
   z-index: 10;
 }
 
-.order-1 {
-  order: 1;
-}
-
-.order-2 {
-  order: 2;
-}
-
 .float-start {
   float: inline-start;
 }
@@ -845,6 +837,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-8 {
@@ -1771,6 +1767,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -1834,6 +1834,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -1863,6 +1868,10 @@ video {
           box-decoration-break: clone;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -1890,6 +1899,14 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-right-top {
+  background-position: right top;
+}
+
+.bg-right {
+  background-position: right;
 }
 
 .bg-repeat {
@@ -2522,19 +2539,6 @@ body{
   height: 100vh;
 }
 
-.main-content{
-  position: relative;
-}
-
-.main-right{
-  background-repeat: no-repeat;
-  background-position: bottom -10% right 70%;
-  background-size: cover;
-}
-
-.main-right > img{
-}
-
 .invite{
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
   padding: 0.7rem 1.5rem;
@@ -2613,20 +2617,12 @@ body{
 }
 
 @media (min-width: 640px) {
-  .sm\:order-1 {
-    order: 1;
-  }
-
-  .sm\:order-2 {
-    order: 2;
-  }
-
   .sm\:h-3\/4 {
     height: 75%;
   }
 
-  .sm\:w-3\/5 {
-    width: 60%;
+  .sm\:h-screen {
+    height: 100vh;
   }
 
   .sm\:w-4\/6 {
@@ -2641,17 +2637,34 @@ body{
     align-items: flex-start;
   }
 
-  .sm\:overflow-visible {
-    overflow: visible;
-  }
-
   .sm\:bg-main-background {
     background-image: url('../images/bg-intro-desktop.svg');
+  }
+
+  .sm\:bg-\[position\:top_right_-100px\] {
+    background-position: top right -100px;
+  }
+
+  .sm\:bg-\[position\:top_right_-150px\] {
+    background-position: top right -150px;
+  }
+
+  .sm\:bg-\[position\:top-150px\] {
+    background-position: top-150px;
+  }
+
+  .sm\:bg-\[position\:top_-150px\] {
+    background-position: top -150px;
   }
 
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .sm\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .sm\:text-left {
@@ -2672,9 +2685,9 @@ body{
     display: none;
   }
 
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .md\:py-8 {

@@ -12,9 +12,9 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="flex flex-col items-center">
+<body class="">
    
-    <header class="container flex justify-between items-center px-0 py-6 md:py-8 md:px-16 sticky w-full z-10 bg-white">
+    <header class=" flex justify-between items-center px-0 py-6 md:py-8 md:px-32 sticky w-full z-10 bg-white">
        
             <img class="" src="./images/logo.svg" alt="">
            
@@ -30,24 +30,18 @@
     </header>
 
     
-    <div class="container px-0 py-6 md:px-16  main-content h-full sm:h-3/4 z-3 flex flex-col sm:flex-row justify-center items-center ">
-       
-            <div class="main-left order-2 sm:order-1 flex items-center  w-full  sm:w-3/5 ">
-                <div class="text-div w-full sm:w-4/6 flex flex-col items-center sm:items-start">
-                    <h1 class="text-5xl lg:text-4xl 2xl:text-6xl 2xl:font-extralight   my-6 text-center sm:text-left">Next generation digital banking</h1>
-                    <p class="text-gray-400 text-lg px-6 sm:px-0">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing and much more.</p>
-                    <button class="invite mt-8 cursor">Request invite</button>
-
-                </div>
+    <div class=" main-content relative overflow-hidden bg-mobile-background sm:bg-main-background px-0 sm:px-32 bg-no-repeat bg-contain bg-right-top h-auto sm:h-screen  flex flex-col-reverse sm:flex-row justify-center items-center ">         
+            <div class="text-div w-full sm:w-4/6 flex flex-col items-center sm:items-start">
+                <h1 class="text-5xl lg:text-4xl 2xl:text-6xl 2xl:font-extralight my-6 text-center sm:text-left">Next generation digital banking</h1>
+                <p class="text-gray-400 text-lg px-6 sm:px-0">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing and much more.</p>
+                <button class="invite mt-8 cursor">Request invite</button>
+            </div>
+            <img class=" w-full h-full object-contain" src="./images/image-mockups.png" alt="phone-images">
             
-            </div>
-        
-           
-            <div class="main-right relative bg-mobile-background sm:bg-main-background sm:overflow-visible z-3 order-1 sm:order-2 w-full h-full">
-                <img class="" src="./images/image-mockups.png" alt="phone-images">
-            </div>
     </div>
-    <div class="container px-0 py-6 md:px-16 text-center sm:text-left second-main">
+
+
+    <div class="second-main  px-0 py-6 md:px-32 text-center bg-slate-50 sm:text-left ">
         <h3 class="text-4xl">Why choose Easybank?</h3>
         <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
     
