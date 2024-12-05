@@ -13,6 +13,7 @@ module.exports = {
       },
       colors: {
         'lightGray': 'hsl(0, 0%, 98%)',
+        'navy': 'hsl(233, 26%, 24%)'
       },
     },
   },
