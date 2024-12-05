@@ -12,7 +12,7 @@ module.exports = {
       'mobile-background': "url('../images/bg-intro-mobile.svg')"
       },
       colors: {
-        'lightGray': 'hsl(0, 0%, 98%)',
+        'lightGray': 'hsl(220, 16%, 96%)',
         'navy': 'hsl(233, 26%, 24%)'
       },
     },
