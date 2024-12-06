@@ -1,0 +1,1 @@
+const hamburgerIcon = document.getElementById('icon-hamburger')
