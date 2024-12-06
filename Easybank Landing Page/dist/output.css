@@ -2755,8 +2755,28 @@ body{
     background-image: url('../images/bg-intro-desktop.svg');
   }
 
+  .sm\:bg-auto {
+    background-size: auto;
+  }
+
   .sm\:bg-right {
     background-position: right;
+  }
+
+  .sm\:bg-right-top {
+    background-position: right top;
+  }
+
+  .sm\:bg-left {
+    background-position: left;
+  }
+
+  .sm\:bg-top {
+    background-position: top;
+  }
+
+  .sm\:bg-bottom {
+    background-position: bottom;
   }
 
   .sm\:px-0 {
