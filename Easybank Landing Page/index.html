@@ -26,10 +26,19 @@
             <li class="hover:text-navy cursor-pointer">Careers</li>
         </ul>
         <button class="hidden lg:block invite cursor hover:opacity-80">Request Invite</button>
-        <img id="icon-hamburger" src="./images/icon-hamburger.svg" alt="burger-menu" class="block md:hidden w-8 h-4">
+
+        <img id="icon-hamburger" src="./images/icon-hamburger.svg" alt="burger-menu" class="block transition duration-300 cursor-pointer md:hidden w-8 h-4">
     </header>
 
-    
+    <div class="drop-down border-2 border-red-400 opacity-0 transition-all duration-300 ease-in-out  flex sm:hidden">
+        <ul class=" flex gap-8 sm:hidden text-gray-400 ">
+            <li class="hover:text-navy cursor-pointer">Home</li>
+            <li class="hover:text-navy cursor-pointer">About</li>
+            <li class="hover:text-navy cursor-pointer">Contact</li>
+            <li class="hover:text-navy cursor-pointer">Blog</li>
+            <li class="hover:text-navy cursor-pointer">Careers</li>
+        </ul>
+    </div>
     <div class=" main-content  bg-top sm:bg-right relative overflow-hidden bg-mobile-background sm:bg-main-background px-0 sm:px-32 bg-no-repeat bg-contain sm:bg-auto  h-auto sm:h-4/5 flex flex-col-reverse sm:flex-row  items-center mb-16 sm:mb-0 bg-testGray">         
             <div class="text-div  w-full sm:w-4/5 flex flex-col justify-center items-center sm:items-start ">
                 <h1 class="main-text text-5xl lg:text-4xl 2xl:text-6xl 2xl:font-extralight my-6 text-center sm:text-left text-navy">Next generation digital banking</h1>
