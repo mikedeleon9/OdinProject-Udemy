@@ -15,7 +15,7 @@ module.exports = {
         'lightGray': 'hsl(220, 16%, 96%)',
         'navy': 'hsl(233, 26%, 24%)',
         'superLightGray': 'hsl(0, 5%, 98%)',
-        'testGray' : "#eee"
+        'testGray' : "#f9f9f9"
       },
     },
   },
