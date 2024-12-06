@@ -2720,12 +2720,20 @@ body{
     margin-right: 16rem;
   }
 
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:h-4\/5 {
     height: 80%;
   }
 
   .sm\:w-4\/5 {
     width: 80%;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -2822,6 +2830,14 @@ body{
     display: flex;
   }
 
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -2829,6 +2845,16 @@ body{
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 }
 
