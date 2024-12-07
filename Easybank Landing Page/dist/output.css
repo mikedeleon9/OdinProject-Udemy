@@ -2640,6 +2640,7 @@ video {
   padding: 0;
   box-sizing: border-box;
   font-family: "Public Sans", sans-serif;
+  --cyan-gradient : linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
 }
 
 body{
@@ -2647,7 +2648,7 @@ body{
 }
 
 .invite{
-  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  background: var(--cyan-gradient);
   padding: 0.7rem 1.5rem;
   border-radius: 1.4rem;
   color: white;
@@ -2673,6 +2674,12 @@ body{
   display: flex;
   opacity: 1;
   transform: translateY(0);
+}
+
+.menu-border{
+  border-bottom: 4px solid ;
+  -o-border-image: var(--cyan-gradient) 1;
+     border-image: var(--cyan-gradient) 1;
 }
 
 @media (min-width: 640px) {
@@ -2842,18 +2849,9 @@ body{
     display: none;
   }
 
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
-  }
-
-  .md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 }
 
