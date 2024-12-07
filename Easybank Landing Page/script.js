@@ -6,4 +6,5 @@ hamburgerIcon.addEventListener('click', () => {
    
     hamburgerIcon.classList.toggle('rotate-90');
     dropDown.classList.toggle('show');
+    
 })
