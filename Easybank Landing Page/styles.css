@@ -45,6 +45,15 @@ body{
     
 }
 
-.drop-down{
-    transition: all .05s ease-in;
+.drop-down {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+   
+}
+
+.drop-down.show {
+    opacity: 1;
+    transform: translateY(0);
+    
 }
