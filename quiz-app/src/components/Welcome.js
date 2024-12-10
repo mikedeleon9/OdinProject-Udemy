@@ -6,12 +6,12 @@ import entertainmentPic from "../images/entertainment.png"
 
 export default function WelcomePage(){
     return(
-        <div className="bg-darkGray text-white h-screen flex">
-            <div className="main-left border-2">
+        <div className="bg-darkGray text-white h-screen flex justify-center w-full p-16">
+            <div className="main-left border-2 p-16">
                 <h1>Fun Trivia!</h1>
                 <p>Pick a subject and get started.</p>
             </div>
-            <div className="main-right border-2">
+            <div className="main-right border-2 p-16">
                 <div className="Geography flex items-center">
                     <img src={geographyPic} className="w-12"></img>
                     <p>Geography</p>
