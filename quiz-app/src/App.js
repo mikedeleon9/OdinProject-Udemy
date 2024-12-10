@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import WelcomePage from './components/Welcome';
 
 function App() {
   return (
     <div className="App">
-      
+      <WelcomePage />
     </div>
   );
 }
