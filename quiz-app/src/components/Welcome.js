@@ -19,7 +19,7 @@ export default function WelcomePage(){
                     <Category imgSrc={historyPic} type={"History"} />
                     <Category imgSrc={entertainmentPic} type={"Entertainment"} />
             </div>
-            <Questions />
+          
         </div>
     )
 }
