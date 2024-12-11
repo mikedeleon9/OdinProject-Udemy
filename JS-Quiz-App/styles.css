@@ -14,6 +14,8 @@ body{
     display: flex;
     bordeR: 2px solid red;
     min-height: 500px;
+    width: 80%;
+    padding: 0 3rem;
 }
 
 .left-wrapper{
@@ -21,16 +23,21 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .right-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    gap: 1rem;
 }
 .category{
     display: flex;
     align-items: center;
     border: 2px solid black;
+    padding: 1rem;
+    border-radius: 1.5rem;
 }
 
 .category > img {
