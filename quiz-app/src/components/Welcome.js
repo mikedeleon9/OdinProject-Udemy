@@ -12,11 +12,11 @@ export default function WelcomePage(){
                 <h1 className="text-5xl">Fun Trivia!</h1>
                 <p className="text-xl">Pick a subject and get started.</p>
             </div>
-            <div className=" flex flex-col items-center justify-center w-full">
-                    <Category imgSrc={geographyPic} />
-                    <Category imgSrc={sportsPic}/>
-                    <Category imgSrc={historyPic}/>
-                    <Category imgSrc={entertainmentPic}/>
+            <div className=" flex flex-col items-center justify-center w-full gap-6">
+                    <Category imgSrc={geographyPic} type={"Geography"} />
+                    <Category imgSrc={sportsPic} type={"Sports"} />
+                    <Category imgSrc={historyPic} type={"History"} />
+                    <Category imgSrc={entertainmentPic} type={"Entertainment"} />
             </div>
         </div>
     )
