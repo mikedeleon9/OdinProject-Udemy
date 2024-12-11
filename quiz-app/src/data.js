@@ -22,6 +22,6 @@ const GeographyQuestions =   [
         answer: "Seven"
     }
 
-]
+];
 
 export default GeographyQuestions; 
