@@ -8,7 +8,7 @@ import Category from "./Category"
 export default function WelcomePage(){
     return(
         <div className="bg-darkGray text-white h-screen flex  ">
-            <div className="main-left w-full border-2 flex flex-col items-center justify-center">
+            <div className="main-left w-full flex flex-col items-center justify-center">
                 <h1 className="text-5xl">Fun Trivia!</h1>
                 <p className="text-xl">Pick a subject and get started.</p>
             </div>
