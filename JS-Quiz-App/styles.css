@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    bordeR: 2px solid red;
+    min-height: 500px;
+}
+
+.left-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.category{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.category > img {
+    border: 2px solid red;
+    width: 3rem;
+    height: 3rem;
+}
