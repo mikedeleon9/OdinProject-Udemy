@@ -4,6 +4,7 @@ import sportsPic from "../images/basketball.png"
 import historyPic from "../images/history.png"
 import entertainmentPic from "../images/entertainment.png"
 import Category from "./Category"
+import Questions from "./Questions"
 
 export default function WelcomePage(){
     return(
@@ -18,6 +19,7 @@ export default function WelcomePage(){
                     <Category imgSrc={historyPic} type={"History"} />
                     <Category imgSrc={entertainmentPic} type={"Entertainment"} />
             </div>
+            <Questions />
         </div>
     )
 }
