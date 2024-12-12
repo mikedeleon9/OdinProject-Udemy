@@ -12,7 +12,6 @@ body{
 
 .wrapper{
     display: flex;
-    bordeR: 2px solid red;
     min-height: 500px;
     width: 80%;
     padding: 0 3rem;
@@ -24,6 +23,8 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap: 2rem;
+    
 }
 .right-wrapper{
     display: flex;
@@ -31,17 +32,29 @@ body{
     justify-content: center;
     width: 100%;
     gap: 1rem;
+    padding: 0 3rem;
 }
+
 .category{
     display: flex;
     align-items: center;
     border: 2px solid black;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 1.5rem;
+    gap: 1rem;
+    cursor: pointer;
 }
 
 .category > img {
-    border: 2px solid red;
     width: 3rem;
     height: 3rem;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+span{
+    font-weight: 900;
 }
