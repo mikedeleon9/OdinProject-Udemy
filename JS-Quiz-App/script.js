@@ -10,6 +10,7 @@ function changeMainScreen(category){
     mainScreen.innerHTML = `
     
         <div class="left-wrapper left-after">
+            <p>Question ${currentIndex +1} of 10</p>
            <p class="question-p-element">${category[currentIndex].question}</p>
            <div class="bar"></div>
         </div>
@@ -32,6 +33,7 @@ function changeMainScreen(category){
            </div>
             
            <button>Submit answer</button>
+          
         </div>
     
     `
