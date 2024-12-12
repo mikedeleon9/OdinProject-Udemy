@@ -15,6 +15,7 @@ body{
     min-height: 500px;
     width: 80%;
     padding: 0 3rem;
+    bordeR: 2px solid black;
 }
 
 .left-wrapper{
@@ -24,7 +25,6 @@ body{
     align-items: center;
     width: 100%;
     gap: 2rem;
-    
 }
 .right-wrapper{
     display: flex;
@@ -57,4 +57,9 @@ h1{
 
 span{
     font-weight: 900;
+}
+
+
+.question-p-element{
+    font-size: 2rem;
 }
