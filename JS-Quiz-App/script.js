@@ -1,12 +1,15 @@
 const welcomeScreen = document.querySelector('.wrapper').innerHTML;
 const mainScreen = document.querySelector('.wrapper');
 let currentIndex = 0;
-
+let activeCategory = null;
 
 
 
 
 function changeMainScreen(category){
+
+    activeCategory = category;
+
     mainScreen.innerHTML = `
     
         <div class="left-wrapper left-after">
@@ -32,11 +35,19 @@ function changeMainScreen(category){
            <p>${category[currentIndex].options[3]}</p>
            </div>
             
-           <button>Submit answer</button>
+           <button onclick="submitAnswer()">Submit answer</button>
           
         </div>
     
     `
+};
+
+
+
+
+function submitAnswer(){
+    currentIndex++;
+    changeMainScreen(activeCategory)
 }
 
 
