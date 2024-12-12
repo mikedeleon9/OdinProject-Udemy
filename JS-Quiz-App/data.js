@@ -1,23 +1,23 @@
 const sportsQuestions = [
     {
         question: "Who holds the most tennis grand slams ever?",
-        options: ["A. Rafael Nadal", "B. Roger Federer", "C. Novak Djokovic", "D. Pete Sampras"]
+        options: ["Rafael Nadal", "Roger Federer", "Novak Djokovic", "Pete Sampras"]
     },
     {
         question: "Which of these NBA players never played in College?",
-        options: ["A. Shaquille O'neal", "B. LeBron James", "C. Michael Jordan", "D. Magic Johnson"]
+        options: ["Shaquille O'neal", "LeBron James", "Michael Jordan", "Magic Johnson"]
     },
     {
         question: "Which of these countries has never won the World Cup?",
-        options: ["A. Uruguay", "B. Spain", "C. Portugal", "D. England"]
+        options: ["Uruguay", "Spain", "Portugal", "England"]
     },
     {
         question: "How many points is a Field Goal worth in American Football?",
-        options: ["A. 2", "B. 3", "C. 6", "D. 7"]
+        options: ["2", "3", "6", "7"]
     },
     {
         question: "Which of these is not a Gold term?",
-        options: ["A. Hawk", "B. Birdie", "C. Eagle", "D. Bogey"]
+        options: ["Hawk", "Birdie", "Eagle", "Bogey"]
     }
 ];
 

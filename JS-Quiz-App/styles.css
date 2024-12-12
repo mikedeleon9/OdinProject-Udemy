@@ -8,6 +8,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #113f67;
+    color: white;
 }
 
 .wrapper{
@@ -15,7 +17,7 @@ body{
     min-height: 500px;
     width: 80%;
     padding: 0 3rem;
-    bordeR: 2px solid black;
+  
 }
 
 .left-wrapper{
@@ -38,11 +40,11 @@ body{
 .category{
     display: flex;
     align-items: center;
-    border: 2px solid black;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 1.5rem;
     gap: 1rem;
     cursor: pointer;
+    background-color: #154d7d;
 }
 
 .category > img {
@@ -55,11 +57,20 @@ h1{
     font-weight: 100;
 }
 
-span{
-    font-weight: 900;
-}
-
 
 .question-p-element{
     font-size: 2rem;
+}
+
+.left-after{
+    
+    
+}
+
+.option-div{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
