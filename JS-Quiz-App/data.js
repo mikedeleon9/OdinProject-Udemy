@@ -5,7 +5,7 @@ const sportsQuestions = [
         correct: "Novak Djokovic"
     },
     {
-        question: "Which of these NBA players never played in College?",
+        question: "Which of these NBA players never played College Basketbal?",
         options: ["Shaquille O'neal", "LeBron James", "Michael Jordan", "Magic Johnson"],
         correct: "LeBron James"
     },
@@ -20,9 +20,14 @@ const sportsQuestions = [
         correct: "3"
     },
     {
-        question: "Which of these is NOT a Gold term?",
+        question: "Which of these is NOT a Golf term?",
         options: ["Hawk", "Birdie", "Eagle", "Bogey"],
         correct: "Hawk"
+    },
+    {
+        question: "Which athlete has won the most gold medals in Olympic games history?",
+        options: ["Simon Biles", "Mark Spitz", "Usain Bolt", "Michael Phelps"],
+        correct: "Michael Phelps"
     }
 ];
 
