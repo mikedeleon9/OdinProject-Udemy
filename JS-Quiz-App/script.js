@@ -2,7 +2,7 @@ const welcomeScreen = document.querySelector('.wrapper').innerHTML;
 const mainScreen = document.querySelector('.wrapper');
 let currentIndex = 0;
 let activeCategory = null;
-
+let score = 0;
 
 
 
@@ -18,20 +18,16 @@ function changeMainScreen(category){
            <div class="bar"></div>
         </div>
         <div class="right-wrapper">
-           <div class="category">
-           <span class="option-div">A</span>
+           <div class="category choice">
            <p>${category[currentIndex].options[0]}</p>
            </div>
-           <div class="category">
-           <span class="option-div">B</span>
+           <div class="category choice">
            <p>${category[currentIndex].options[1]}</p>
            </div>
-           <div class="category">
-           <span class="option-div">C</span>
+           <div class="category choice">
            <p>${category[currentIndex].options[2]}</p>
            </div>
-           <div class="category">
-           <span class="option-div">D</span>
+           <div class="category choice">
            <p>${category[currentIndex].options[3]}</p>
            </div>
             
@@ -40,13 +36,38 @@ function changeMainScreen(category){
         </div>
     
     `
+
+    const answerChoices = document.querySelectorAll('.choice');
+
+answerChoices.forEach(choice => {
+    choice.addEventListener('click', () => {
+        answerChoices.forEach(answer => answer.classList.remove('answer-selected'));
+       
+        choice.classList.add('answer-selected');
+    })
+})
+
+
+
 };
 
 
 
 
 function submitAnswer(){
+    const selectedAnswer = document.querySelector('.answer-selected');
+
+
+    if(selectedAnswer.textContent.trim() === activeCategory[currentIndex].correct){
+        console.log('correct')
+    }
+    else{
+        console.log('incorrect')
+    }
+
     currentIndex++;
+    
+   
     changeMainScreen(activeCategory)
 }
 

@@ -91,5 +91,14 @@ button{
    cursor: pointer;
 }
 
+.answer-selected{
+    background: blueviolet;
+}
 
+.correct-answer{
+    background: green;
+}
 
+.incorrect-answer{
+    background: red;
+}
