@@ -97,3 +97,17 @@ button{
 .incorrect-answer{
     background: red;
 }
+
+.correct-blink{
+    animation: blink 0.5s linear 2;
+}
+
+@keyframes blink {
+    0%, 100% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: green;
+    }
+}

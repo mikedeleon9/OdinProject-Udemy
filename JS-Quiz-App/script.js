@@ -56,14 +56,23 @@ answerChoices.forEach(choice => {
 
 function submitAnswer(){
     const selectedAnswer = document.querySelector('.answer-selected');
+    const correctAnswer = activeCategory[currentIndex].correct;
+    const answerChoices = document.querySelectorAll('.choice');
 
 
-    if(selectedAnswer.textContent.trim() === activeCategory[currentIndex].correct){
+    if(selectedAnswer.textContent.trim() === correctAnswer){
         selectedAnswer.classList.add('correct-answer');
-        score++
+        score++;
     }
     else{
         selectedAnswer.classList.add('incorrect-answer');
+
+        answerChoices.forEach(choice => {
+            if (choice.textContent.trim() === correctAnswer){
+                choice.classList.add('correct-blink')
+            }
+        })
+    
     }
 
     currentIndex++;
@@ -71,7 +80,7 @@ function submitAnswer(){
     if (currentIndex < activeCategory.length ) {
         setTimeout(() => {
             changeMainScreen(activeCategory)
-           },  500);
+           },  1200);
            
     } else {
         setTimeout(()=> {
