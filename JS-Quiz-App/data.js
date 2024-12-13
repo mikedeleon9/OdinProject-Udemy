@@ -28,6 +28,14 @@ const sportsQuestions = [
         question: "Which athlete has won the most gold medals in Olympic games history?",
         options: ["Simon Biles", "Mark Spitz", "Usain Bolt", "Michael Phelps"],
         correct: "Michael Phelps"
+    },
+    {
+        question: "Which of these animal based Teams does NOT exist in any of the four major North American sports?",
+        options: ["Ducks", "Dolphins", "Cougars", "Sharks"],
+        correct: "Cougars"
+    },
+    {
+        question: ""
     }
 ];
 
@@ -41,6 +49,7 @@ const geographyQuestions = [
     {
         question: "What is the only country in the world without a square/rectangular flag?",
         options: ["Kazakhstan", "Myanmar", "Nepal", "Thailand"],
-        correct: "Nepal"
+        correct: "Nepal",
+        picture: "./images/Nepal-Flag.jpg"
     }
 ]

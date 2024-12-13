@@ -15,7 +15,9 @@ function changeMainScreen(category){
         <div class="left-wrapper left-after">
             <p>Question ${currentIndex +1} of 10</p>
            <p class="question-p-element">${category[currentIndex].question}</p>
+            ${category[currentIndex].picture ? `<img class="conditional-image" src="${category[currentIndex].picture}" alt="Question Image"/>` : ''}
            <div class="bar"></div>
+           <img />
         </div>
         <div class="right-wrapper">
            <div class="category choice">

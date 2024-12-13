@@ -102,6 +102,11 @@ button{
     animation: blink 0.5s linear 2;
 }
 
+.conditional-image{
+    width: 20rem;
+    height: 20rem;
+}
+
 @keyframes blink {
     0%, 100% {
         background-color: transparent;
