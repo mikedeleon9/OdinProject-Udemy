@@ -59,7 +59,8 @@ function submitAnswer(){
 
 
     if(selectedAnswer.textContent.trim() === activeCategory[currentIndex].correct){
-        selectedAnswer.classList.add('correct-answer')
+        selectedAnswer.classList.add('correct-answer');
+        score++
     }
     else{
         selectedAnswer.classList.add('incorrect-answer');
@@ -67,12 +68,16 @@ function submitAnswer(){
 
     currentIndex++;
 
-    if (currentIndex < activeCategory.length) {
+    if (currentIndex < activeCategory.length ) {
         setTimeout(() => {
             changeMainScreen(activeCategory)
-           },  500)
+           },  500);
+           
     } else {
-        mainScreen.innerHTML = `<p>You've completed all the questions for this category!</p>`;
+        setTimeout(()=> {
+            mainScreen.innerHTML = `<p>You've completed all the questions for this category! Your Score is ${score}</p>`;
+        }, 500);
+        
     }
     
  

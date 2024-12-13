@@ -26,3 +26,16 @@ const sportsQuestions = [
     }
 ];
 
+
+const geographyQuestions = [
+    {
+        question: "What is the world's largest River?",
+        options: ["Nile", "Amazon", "Mississippi", "Tiger"],
+        correct: "Nile"
+    },
+    {
+        question: "What is the only country in the world without a square/rectangular flag?",
+        options: ["Kazakhstan", "Myanmar", "Nepal", "Thailand"],
+        correct: "Nepal"
+    }
+]
