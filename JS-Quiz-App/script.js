@@ -34,7 +34,7 @@ function changeMainScreen(category){
            <button onclick="submitAnswer()">Submit answer</button>
           
         </div>
-    
+        <button onclick="restartQuiz()">Restart</button>
     `
 
     const answerChoices = document.querySelectorAll('.choice');
@@ -51,7 +51,11 @@ answerChoices.forEach(choice => {
 
 };
 
-
+function restartQuiz() {
+    mainScreen.innerHTML = welcomeScreen;
+    score = 0;
+    currentIndex = 0;
+}
 
 
 function submitAnswer(){
