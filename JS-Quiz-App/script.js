@@ -91,7 +91,7 @@ function submitAnswer(){
     } else {
         setTimeout(()=> {
             mainScreen.innerHTML = `<p>You've completed all the questions for this category! Your Score is ${score}</p>`;
-        }, 500);
+        }, 1000);
         
     }
     

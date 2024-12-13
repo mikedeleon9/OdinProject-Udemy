@@ -51,5 +51,30 @@ const geographyQuestions = [
         options: ["Kazakhstan", "Myanmar", "Nepal", "Thailand"],
         correct: "Nepal",
         picture: "./images/Nepal-Flag.jpg"
+    },
+    {
+        question: "How many countries in the world end in the suffix <br> '-stan'?",
+        options: ["5", "6", "4", "7"],
+        correct: "7"
+    },
+    {
+        question: "What is least densely populated Independent country in the world?",
+        options: ["Russia", "Canada", "Mongolia", "Romania"],
+        correct: "Mongolia"
+    },
+
+]
+
+
+const entertainmentQuestions = [
+    {
+        question: "He has won the most Acadamy Awards for Best Actor, with three.",
+        options: ["Tom Hanks", "Al Pacino", "Marlon Brando", "Daniel Day Lewis"],
+        correct: "Daniel Day Lewis"
+    },
+    {
+        question: "Which of these is the only artist to achieve a #1 hit in five different decades?",
+        options: ["Elton John", "Michael Jackson", "Dolly Parton", "Paul McCartney"],
+        correct: "Elton John"
     }
 ]
