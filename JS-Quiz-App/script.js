@@ -59,16 +59,24 @@ function submitAnswer(){
 
 
     if(selectedAnswer.textContent.trim() === activeCategory[currentIndex].correct){
-        console.log('correct')
+        selectedAnswer.classList.add('correct-answer')
     }
     else{
-        console.log('incorrect')
+        selectedAnswer.classList.add('incorrect-answer');
     }
 
     currentIndex++;
+
+    if (currentIndex < activeCategory.length) {
+        setTimeout(() => {
+            changeMainScreen(activeCategory)
+           },  500)
+    } else {
+        mainScreen.innerHTML = `<p>You've completed all the questions for this category!</p>`;
+    }
     
-   
-    changeMainScreen(activeCategory)
+ 
+    
 }
 
 

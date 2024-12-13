@@ -65,18 +65,9 @@ h1{
     font-size: 2rem;
 }
 
-.left-after{
-    
-    
-}
 
-.option-div{
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
 
 button{
    height: 3rem;
@@ -89,6 +80,10 @@ button{
    color: white;
    font-size: 1.2rem;
    cursor: pointer;
+}
+
+.choice{
+    padding: 1.2rem 1.5rem;
 }
 
 .answer-selected{
