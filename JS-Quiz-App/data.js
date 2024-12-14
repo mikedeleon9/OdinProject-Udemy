@@ -5,7 +5,7 @@ const sportsQuestions = [
         correct: "Novak Djokovic"
     },
     {
-        question: "Which of these NBA players never played College Basketbal?",
+        question: "Which of these NBA players never played college Basketbal?",
         options: ["Shaquille O'neal", "LeBron James", "Michael Jordan", "Magic Johnson"],
         correct: "LeBron James"
     },
