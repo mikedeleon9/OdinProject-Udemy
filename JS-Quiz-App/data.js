@@ -62,6 +62,9 @@ const geographyQuestions = [
         options: ["Russia", "Canada", "Mongolia", "Romania"],
         correct: "Mongolia"
     },
+    {
+
+    }
 
 ]
 
@@ -76,5 +79,46 @@ const entertainmentQuestions = [
         question: "Which of these is the only artist to achieve a #1 hit in five different decades?",
         options: ["Elton John", "Michael Jackson", "Dolly Parton", "Paul McCartney"],
         correct: "Elton John"
+    },
+    {
+        question: "What does Matilda Wormwood's father sell?",
+        options: ["Books", "Cars", "Houses", "Tires"],
+        correct: "Cars"
+    },
+    {
+        question: "Who did Forbes name the youngest 'self-made billionaire ever' in 2019?",
+        options: ["Mark Zuckerberg", "Kylie Jenner", "Kim Jung-youn", "Ben Francis"],
+        correct: "Kylie Jenner"
+    },
+    {
+        question: "Which of these is NOT one of Michael Scott's alter egos?",
+        options: ["Prison Mike", "Date Mike", "Fat Mike", "Michael Klump"],
+        correct: "Fat Mike"
+    },
+    {
+        question: "Which of these is NOT an Avenger in the MCU movies?",
+        options: ["Wolverine", "Vision", "Hawkeye", "Spiderman"],
+        correct: "Wolverine"
+    },
+    {
+        question: "Who wrote the Twilight Books?",
+        options: ["EB James", "John Green", "Gyllian Flynn", "Stephanie Meyer"],
+        correct: "Stephanie Meyer" 
+    },
+    {
+        question: "What is Rihanna's real name?",
+        options: ["Robyn Fenty", "Rihanna Fenty", "Ruby Fenty", "Rachel Fenty"],
+        correct: "Robyn Fenty"
+    },
+    {
+        question:  "Which hard seltzer did America face a shortage of in 2019?",
+        options: ["White Claw", "Truly", "Mike's Hard", "Topo Chico"],
+        correct: "White Claw"
+    },
+    {
+        question: "What is the highest grossing film of All Time?",
+        options: ["Titanic", "Avengers:Endgame", "Avatar", "Jurassic World"],
+        correct: "Avatar"
     }
+
 ]
