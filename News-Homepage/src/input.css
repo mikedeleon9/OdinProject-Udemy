@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    font-family: "Inter", sans-serif;
+}
 body{
     height: 100vh;
     padding: 2rem;
@@ -10,4 +13,8 @@ body{
 
 ul{
     color: hsl(236, 13%, 42%);
+}
+
+.side-panel{
+    background-color: hsl(240, 100%, 5%);
 }
