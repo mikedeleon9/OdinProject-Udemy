@@ -36,7 +36,7 @@ function changeMainScreen(category){
            <button onclick="submitAnswer()">Submit answer</button>
           
         </div>
-        <button onclick="restartQuiz()">Restart</button>
+        <button class="restart-button" onclick="restartQuiz()">Restart</button>
     `
 
     const answerChoices = document.querySelectorAll('.choice');

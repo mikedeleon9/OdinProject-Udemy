@@ -107,6 +107,11 @@ button{
     height: 20rem;
 }
 
+.restart-button{
+    margin-top: 1rem;
+    background: rgb(201, 29, 29);
+}
+
 @keyframes blink {
     0%, 100% {
         background-color: transparent;
@@ -116,3 +121,4 @@ button{
         background-color: green;
     }
 }
+
