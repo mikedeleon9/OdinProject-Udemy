@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <img src="./assets/images/logo.svg" alt="" class="logo">
-            <ul>
+<body class="flex justify-center">
+    <div class="container px-32">
+        <header class="flex justify-between mb-10">
+            <img src="../news-homepage-main/assets/images/logo.svg" alt="" class="logo">
+            <ul class="flex gap-8 ">
                 <li>Home</li>
                 <li>New</li>
                 <li>Popular</li>
@@ -18,7 +19,7 @@
                 <li>Categories</li>
             </ul>
         </header>
-        <div class="main-body grid grid-cols-3 border-2 border-blue-600">
+        <div class="main-body gap-8 grid grid-cols-3 border-2 border-blue-600">
             <img class="col-span-2"src="../news-homepage-main/assets/images/image-web-3-desktop.jpg" alt="main-pic">
         
         <div class="side-panel row-span-2 border-2 border-red-400">
@@ -27,10 +28,10 @@
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
             <hr>
         </div>
-        <div class="bright">
-            <h1>The Bright Future of Web 3.0?</h1>
+        <div class="bright border-2 border-lime-700">
+            <h1 class="text-6xl font-bold">The Bright Future of <br> Web 3.0?</h1>
         </div>
-        <div class="evolution">
+        <div class="evolution border-2 border-pink-600">
             <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
             But is it really fulifilling its promise?</p>
             <button>Read More</button>
