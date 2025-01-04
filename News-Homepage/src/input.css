@@ -27,5 +27,10 @@ ul, .dive{
 
 .small-text{
     font-size: 13px;
-    color: hsl(236, 13%, 42%);
+    color: #989898;
+    
+}
+
+hr{
+    border: 0.4px solid hsl(236, 13%, 42%);
 }
