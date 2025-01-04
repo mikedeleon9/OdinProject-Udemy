@@ -24,3 +24,8 @@ ul, .dive{
     background-color: hsl(5, 85%, 63%);
     letter-spacing: 3px;
 }
+
+.small-text{
+    font-size: 13px;
+    color: hsl(236, 13%, 42%);
+}
