@@ -26,7 +26,7 @@ ul, .dive{
 }
 
 .small-text{
-    font-size: 13px;
+    font-size: 0.75rem;
     color: #989898;
     
 }
@@ -39,4 +39,16 @@ hr{
     color: hsl(5, 85%, 63%);
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.medium-text{
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+
+
+.container-one, .container-two, .container-three{
+   
+    flex: 1;
 }
