@@ -5,16 +5,22 @@
 *{
     font-family: "Inter", sans-serif;
 }
+
 body{
-    height: 100vh;
+    
     padding: 2rem;
     background-color: hsl(36, 100%, 99%);
 }
 
-ul{
+ul, .dive{
     color: hsl(236, 13%, 42%);
 }
 
 .side-panel{
     background-color: hsl(240, 100%, 5%);
+}
+
+.read-more{
+    background-color: hsl(5, 85%, 63%);
+    letter-spacing: 3px;
 }
