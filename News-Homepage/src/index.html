@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="flex justify-center">
-    <div class="container px-4 sm:px-8 md:px-16 lg:px-32">
+    <div class="container px-4 sm:px-8 md:px-16 xl:px-32">
         <header class="flex justify-between mb-10">
             <img src="../news-homepage-main/assets/images/logo.svg" alt="" class="logo">
             <img class="block lg:hidden" src="../news-homepage-main/assets/images/icon-menu.svg" alt="">
@@ -49,9 +49,9 @@
     </div>
     <div class="evoluton-p gap-4 lg:gap-16 flex flex-col lg:flex-row  col-span-1 lg:col-span-2">
         <div class="">
-            <h1 class="text-xl lg:text-2xl 2xl:text-5xl font-extrabold basis-1">The Bright Future of  Web 3.0?</h1>
+            <h1 class="text-xl md:text-2xl xl:text-3xl 2xl:text-5xl font-extrabold basis-1">The Bright Future of  Web 3.0?</h1>
         </div>
-        <div class="evolution flex flex-col justify-between items-start">
+        <div class="evolution gap-6 flex flex-col justify-between items-start">
             <p class="dive text-sm">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
             But is it really fulifilling its promise?</p>
             <button class="read-more text-xs py-3 px-7 font-bold ">READ MORE</button>
@@ -59,8 +59,8 @@
     </div>
     </div>
 
-    <div class="bottom-container flex flex-col lg:flex-row items-stretch justify-between mt-14 ">
-        <div class="container-one flex ">
+    <div class="bottom-container gap-8 flex flex-col lg:flex-row items-stretch justify-between mt-14 ">
+        <div class="container-one flex items-center">
             <img class="h-28" src="../news-homepage-main/assets/images/image-retro-pcs.jpg" alt="retro-pc">
             <div class="right-container col-span-2 px-4">
                 <p class="numbers">01</p>
@@ -68,7 +68,7 @@
                 <p class="text-sm">What happens when old PCs are given modern updates?</p>
             </div>
         </div>
-        <div class="container-two flex">
+        <div class="container-two flex items-center">
             <img class="h-28" src="../news-homepage-main/assets/images/image-top-laptops.jpg" alt="laptops">
             <div class="right-container px-4 col-span-2">
                 <p class="numbers">02</p>
@@ -76,13 +76,15 @@
                 <p class="text-sm">Our best picks for various needs and budgets.</p>
             </div>
         </div>
-        <div class="container-three flex ">
-            <img class="h-28" src="../news-homepage-main/assets/images/image-gaming-growth.jpg" alt="gaming-growth">
-            <div class="right-container px-4 col-span-2">
+        <div class="container-three flex h-full ">
+           <div class="flex h-full items-center">
+            <img class="max-h-28 object-cover" src="../news-homepage-main/assets/images/image-gaming-growth.jpg" alt="gaming-growth">
+            <div class="right-container px-4">
                 <p class="numbers">03</p>
                 <p class="medium-text">The Growth of Gaming</p>
                 <p class="text-sm">How the pandemic sparked fresh gaming opportunities.</p>
             </div>
+        </div>
         </div>
     </div>
 
