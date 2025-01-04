@@ -620,6 +620,10 @@ video {
   margin-top: 3.5rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -937,6 +941,10 @@ hr{
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:grid-cols-3 {
