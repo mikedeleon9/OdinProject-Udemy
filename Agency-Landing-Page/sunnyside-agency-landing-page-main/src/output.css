@@ -632,6 +632,16 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.px-28 {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -695,6 +705,10 @@ video {
 
 .decoration-\[\#FFCC00\]\/\[\.6\] {
   text-decoration-color: rgb(255 204 0 / .6);
+}
+
+.decoration-\[\#fe7867\]\/\[\.6\] {
+  text-decoration-color: rgb(254 120 103 / .6);
 }
 
 .decoration-8 {
