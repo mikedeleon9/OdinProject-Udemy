@@ -14,7 +14,8 @@ module.exports = {
         '5.5xl' : '3.5rem'
       },
       colors : {
-        "darkishGray" : "hsl(232, 10%, 55%)"
+        "darkishGray" : "hsl(232, 10%, 55%)",
+        "photoBlue" : "	#19536b"
       }
     },
   },
