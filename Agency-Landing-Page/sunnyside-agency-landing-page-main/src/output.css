@@ -578,16 +578,20 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
 
-.justify-between {
-  justify-content: space-between;
+.justify-center {
+  justify-content: center;
 }
 
-.gap-6 {
-  gap: 1.5rem;
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-8 {
@@ -606,6 +610,11 @@ video {
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
+}
+
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .px-6 {
@@ -635,6 +644,16 @@ video {
   font-size: 3.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -647,14 +666,47 @@ video {
   letter-spacing: 0.2em;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.text-darkishGray {
+  --tw-text-opacity: 1;
+  color: hsl(232 10% 55% / var(--tw-text-opacity, 1));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-\[\#FFCC00\] {
+  text-decoration-color: #FFCC00;
+}
+
+.decoration-\[\#FFCC00\]\/\[\.5\] {
+  text-decoration-color: rgb(255 204 0 / .5);
+}
+
+.decoration-\[\#FFCC00\]\/\[\.6\] {
+  text-decoration-color: rgb(255 204 0 / .6);
+}
+
+.decoration-8 {
+  text-decoration-thickness: 8px;
+}
+
+.decoration-\[8px\] {
+  text-decoration-thickness: 8px;
+}
+
+.decoration-\[10px\] {
+  text-decoration-thickness: 10px;
 }
 
 *{
@@ -678,4 +730,22 @@ body{
 
 .arrow{
   margin: 7% auto;
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:flex-row {
+    flex-direction: row;
+  }
 }
