@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+
+body{
+   height: 100vh;
+}
+
+.top-container{
+    background-image: url("../images/desktop/image-header.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+}
+
+.arrow{
+    margin: 7% auto;
+}
