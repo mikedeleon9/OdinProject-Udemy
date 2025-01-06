@@ -41,3 +41,16 @@ body{
     
 }
 
+.testimonial-inner > div > img{
+    border-radius: 50%;
+    width: 5rem;
+}
+
+.testimonial-inner > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
