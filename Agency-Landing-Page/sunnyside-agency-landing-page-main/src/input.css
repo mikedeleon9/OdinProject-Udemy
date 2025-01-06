@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Barlow", sans-serif;
+    --darkish-gray: hsl(232, 10%, 55%);
 }
 
 body{
@@ -51,6 +52,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     font-size: 0.9rem;
+    color: var(--darkish-gray);
+    font-weight: bold;
 }
 
