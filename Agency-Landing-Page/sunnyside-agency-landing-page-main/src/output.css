@@ -743,6 +743,21 @@ video {
   padding-bottom: 4rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -901,6 +916,10 @@ ul > li {
 }
 
 @media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-48 {
     width: 12rem;
   }
@@ -975,6 +994,15 @@ ul > li {
   .lg\:px-36 {
     padding-left: 9rem;
     padding-right: 9rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:text-start {
+    text-align: start;
   }
 
   .lg\:text-5\.5xl {
