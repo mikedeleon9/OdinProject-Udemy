@@ -570,10 +570,6 @@ video {
   display: none;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -592,10 +588,6 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -646,20 +638,6 @@ video {
   border-width: 4px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity, 1));
-}
-
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
@@ -670,24 +648,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\(\.\.\/images\/desktop\/image-graphic-design\.jpg\)\] {
-  background-image: url(../images/desktop/image-graphic-design.jpg);
-}
-
 .bg-\[url\(\.\.\/images\/desktop\/image-photography\.jpg\)\] {
   background-image: url(../images/desktop/image-photography.jpg);
 }
 
-.bg-\[url\(\.\.\/images\/mobile\/image-graphic-design\)\] {
-  background-image: url(../images/mobile/image-graphic-design);
-}
-
 .bg-\[url\(\.\.\/images\/mobile\/image-graphic-design\.jpg\)\] {
   background-image: url(../images/mobile/image-graphic-design.jpg);
-}
-
-.bg-contain {
-  background-size: contain;
 }
 
 .bg-cover {
@@ -696,14 +662,6 @@ video {
 
 .bg-center {
   background-position: center;
-}
-
-.bg-bottom {
-  background-position: bottom;
-}
-
-.bg-top {
-  background-position: top;
 }
 
 .bg-no-repeat {
@@ -715,14 +673,14 @@ video {
   padding-right: 3rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
-}
-
-.px-48 {
-  padding-left: 12rem;
-  padding-right: 12rem;
 }
 
 .px-6 {
@@ -782,12 +740,21 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .tracking-evenWider {
@@ -865,14 +832,7 @@ body{
 }
 
 .testimonial-inner > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  font-size: 0.9rem;
   color: var(--darkish-gray);
-  font-weight: bold;
 }
 
 .logo-icon{
@@ -923,16 +883,16 @@ ul > li {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:items-baseline {
     align-items: baseline;
   }
 
   .lg\:bg-\[url\(\.\.\/images\/desktop\/image-graphic-design\.jpg\)\] {
     background-image: url(../images/desktop/image-graphic-design.jpg);
-  }
-
-  .lg\:bg-\[url\(\.\.\/images\/desktop\/image-photography\.jpg\)\] {
-    background-image: url(../images/desktop/image-photography.jpg);
   }
 
   .lg\:px-20 {
@@ -943,6 +903,11 @@ ul > li {
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .lg\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .lg\:px-48 {
@@ -959,7 +924,17 @@ ul > li {
     text-align: start;
   }
 
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .lg\:text-5\.5xl {
     font-size: 3.5rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

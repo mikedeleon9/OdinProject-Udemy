@@ -34,14 +34,10 @@ body{
 }
 
 .testimonial-inner > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    font-size: 0.9rem;
+ 
+  
     color: var(--darkish-gray);
-    font-weight: bold;
+  
 }
 
 .logo-icon{
