@@ -27,20 +27,6 @@ body{
     margin: 7% auto;
 }
 
-.fruit-container{
-    height: 90%;
-}
-
-.cherries{
-    background-image: url("../images/desktop/image-graphic-design.jpg");
-    background-size: cover;
-}
-
-.orange{
-    background-image: url('../images/desktop/image-photography.jpg');
-    background-size: cover;
-    
-}
 
 .testimonial-inner > div > img{
     border-radius: 50%;
