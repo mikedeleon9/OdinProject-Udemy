@@ -1,6 +1,6 @@
 const burgerIcon = document.getElementById('burger-icon');
-const sidePane; = document.getElementById('side-panel')
+const body = document.querySelector('body');
 
 burgerIcon.addEventListener('click', () => {
-    
+    body.classList.toggle('w-3/5')
 })
