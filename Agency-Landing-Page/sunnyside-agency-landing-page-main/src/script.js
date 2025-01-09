@@ -1,7 +1,6 @@
 const burgerIcon = document.getElementById('burger-icon');
-const sidePanel = document.getElementById('side-panel')
-const header = document.querySelector('header');
+const menuPanel = document.getElementById('menu-panel')
 
 burgerIcon.addEventListener('click', () => {
-
+    menuPanel.classList.toggle('hidden');
   });
