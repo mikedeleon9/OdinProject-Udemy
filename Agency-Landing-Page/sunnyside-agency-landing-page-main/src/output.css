@@ -566,8 +566,8 @@ video {
   left: 3rem;
 }
 
-.top-24 {
-  top: 6rem;
+.top-36 {
+  top: 9rem;
 }
 
 .mt-24 {
@@ -876,18 +876,24 @@ ul > li {
   cursor: pointer;
 }
 
+#menu-panel::before{
+  content: '';
+  border: 2px solid red;
+  height: 80px;
+  position: absolute;
+}
+
 #menu-panel::after{
   content: "";
-  border: 2px solid red;
   position: absolute;
   top: -10px;
   right: 0;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 10px 15px 10px;
+  border-width: 10px 20px 5px 5px;
   /* Top is 0, others form the triangle */
-  border-color: transparent transparent #f1f1f1 transparent;
+  border-color: transparent white white transparent;
   /* Match background color of popup */
 }
 
@@ -995,3 +1001,5 @@ ul > li {
     line-height: 1.5rem;
   }
 }
+
+
