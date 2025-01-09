@@ -51,13 +51,6 @@ ul > li {
     cursor: pointer;
 }
 
-#menu-panel::before{
-    content: '';
-    border: 2px solid red;
-    height: 80px;
-    position: absolute;
-
-}
 
 #menu-panel::after{
     content: "";
