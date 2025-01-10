@@ -22,6 +22,10 @@ body{
     border-radius: 50%;
 }
 
+.inner-panel > ul {
+    color: #9fd3c7;
+}
+
 .project > a > img{
     width: 18rem;
     height: 10rem;
