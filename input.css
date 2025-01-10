@@ -12,28 +12,7 @@ body{
     height: 100vh;
 }
 
-h1{
-    font-size: 1.5rem;
-}
 
-.main-container{
-    display: flex;
-    height: 100%;
-   
-}
-
-.side-panel{
-    border: 2px solid black;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.inner-panel{
-    border: 2px solid red;
-}
 
 .profile-pic{
     width: 8rem;

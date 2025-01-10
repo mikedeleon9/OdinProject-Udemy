@@ -554,6 +554,26 @@ video {
   display: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-3\/12 {
+  width: 25%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -561,6 +581,15 @@ video {
 .border-lime-600 {
   --tw-border-opacity: 1;
   border-color: rgb(101 163 13 / var(--tw-border-opacity, 1));
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
+}
+
+.text-center {
+  text-align: center;
 }
 
 *{
@@ -571,27 +600,6 @@ video {
 
 body{
   height: 100vh;
-}
-
-h1{
-  font-size: 1.5rem;
-}
-
-.main-container{
-  display: flex;
-  height: 100%;
-}
-
-.side-panel{
-  border: 2px solid black;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.inner-panel{
-  border: 2px solid red;
 }
 
 .profile-pic{
