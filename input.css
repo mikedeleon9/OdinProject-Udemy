@@ -6,20 +6,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body{
     height: 100vh;
 }
 
-
+.project{
+    cursor: pointer;
+}
 
 .profile-pic{
     width: 8rem;
     border-radius: 50%;
 }
 
-.project-one > img{
+.project > a > img{
     width: 18rem;
     height: 10rem;
     border: 2px solid black; 
