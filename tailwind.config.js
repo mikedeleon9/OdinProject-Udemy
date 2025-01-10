@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         "Fraunces" : ["Fraunces", "sans-serif"]
+      },
+      colors: {
+        "mint-green" : "#9fd3c7"
       }
     },
   },
