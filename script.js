@@ -24,7 +24,8 @@ arrowIcon.addEventListener('click', () => {
   
   
 
-  } else {
+  } 
+  else {
     arrowIcon.style.transform = 'rotate(180deg)';
     sidePanel.classList.replace('w-3/12', 'w-24');
 
@@ -39,6 +40,8 @@ arrowIcon.addEventListener('click', () => {
     }, 300)
  
     
+    
+    
     listIcon.forEach(icon => {
         icon.addEventListener('mouseover', ()=>{
             icon.setAttribute('fill', "#9fd3c7")
@@ -52,7 +55,7 @@ arrowIcon.addEventListener('click', () => {
     })
     
   }
+  
   isRotated = !isRotated; // Toggle the state
-
 
 });
