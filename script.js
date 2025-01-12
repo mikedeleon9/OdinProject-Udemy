@@ -5,12 +5,13 @@ const sidePanel = document.querySelector('.side-panel');
 const navMenuItems = document.querySelectorAll('.nav-menu-item');
 const listIcon = document.querySelectorAll('.list-icon')
 
+const ANIMATION_DURATION = 300;
 let isRotated = false;
 
 arrowIcon.addEventListener('click', () => {
   if (isRotated) {
     arrowIcon.style.transform = 'rotate(0deg)';
-    sidePanel.classList.replace('w-24', 'w-3/12');
+    sidePanel.classList.replace('w-24', 'w-2/12');
    
     
     setTimeout(()=> {
@@ -19,7 +20,7 @@ arrowIcon.addEventListener('click', () => {
         navMenuItems.forEach(item => {
             item.classList.remove('hidden');
         })
-    }, 300)
+    }, ANIMATION_DURATION)
 
   
   
@@ -27,7 +28,7 @@ arrowIcon.addEventListener('click', () => {
   } 
   else {
     arrowIcon.style.transform = 'rotate(180deg)';
-    sidePanel.classList.replace('w-3/12', 'w-24');
+    sidePanel.classList.replace('w-2/12', 'w-24');
 
     setTimeout(()=> {
         nameTitleDiv.classList.add('hidden');
@@ -37,7 +38,7 @@ arrowIcon.addEventListener('click', () => {
             
         })
         
-    }, 300)
+    }, ANIMATION_DURATION)
  
     
     
