@@ -5,7 +5,7 @@ import Intro from './components/Intro'
 
 function App() {
   return (
-    <div className="App mx-32 py-8">
+    <div className="App  py-8">
       <Header></Header>
       <Intro></Intro>
     </div>

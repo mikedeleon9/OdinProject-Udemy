@@ -3,7 +3,7 @@ import logo from '../images/logo.svg'
 
 export default function Header(){
     return(
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mx-32">
             <div className="left-side flex gap-8">
                 <img src={logo}></img>
                 <ul className="flex items-center gap-8 text-violetGray">
