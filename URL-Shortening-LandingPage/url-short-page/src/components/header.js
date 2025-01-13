@@ -6,7 +6,7 @@ export default function Header(){
         <div className="flex justify-between items-center">
             <div className="left-side flex gap-8">
                 <img src={logo}></img>
-                <ul className="flex items-center gap-8">
+                <ul className="flex items-center gap-8 text-[#bfbfbf]">
                     <li>Features</li>
                     <li>Pricing</li>
                     <li>Resources</li>
