@@ -3,11 +3,11 @@ import GetStartedButton from './getStartedButton'
 
 export default function Intro(){
     return(
-        <div className=' mt-16 mx-64'>
+        <div className=' mt-16 mx-64 '>
             <div className="flex items-center justify-between bg-no-repeat bg-right overflow-hidden" >
-                <div className="" >
-                    <h1 className="text-5xl font-bold">More than just shorter links</h1>
-                    <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                <div className=" flex flex-col gap-4 justify-center" >
+                    <h1 className="text-6xl font-bold">More than just shorter links</h1>
+                    <p className='text-lg text-violetGray'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
                     <GetStartedButton />
                 </div>
                 <div className=''>
