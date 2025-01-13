@@ -3,7 +3,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'violetGray' : '	#9e9aa7',
+        "teal" : "hsl(180, 66%, 49%)" 
+      }
+    },
   },
   plugins: [],
 };
