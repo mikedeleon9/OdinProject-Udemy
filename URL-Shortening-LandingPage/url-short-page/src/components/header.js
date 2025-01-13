@@ -3,9 +3,9 @@ import logo from '../images/logo.svg'
 
 export default function Header(){
     return(
-        <div className="flex justify-between items-center mx-72">
+        <div className="flex justify-between items-center mx-64">
             <div className="left-side flex gap-8">
-                <img src={logo}></img>
+                <img src={logo} alt="logo"></img>
                 <ul className="flex items-center gap-8 text-violetGray">
                     <li className="font-medium">Features</li>
                     <li className="font-medium">Pricing</li>
