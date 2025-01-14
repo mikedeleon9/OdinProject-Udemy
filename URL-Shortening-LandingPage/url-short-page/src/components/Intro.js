@@ -3,15 +3,17 @@ import GetStartedButton from './getStartedButton'
 
 export default function Intro(){
     return(
-        <div className=' mt-16 mx-64 '>
-            <div className="ml-8 flex items-center justify-between bg-no-repeat bg-right overflow-hidden" >
-                <div className=" flex flex-col gap-4 justify-center" >
+        <div className=' mt-16 ml-36 2xl:mx-64 h-4/5'>
+            <div className="h-full flex items-center justify-between overflow-hidden" 
+               >
+                <div className=" flex flex-col gap-4 justify-center " >
                     <h1 className="text-6xl font-bold">More than just shorter links</h1>
                     <p className='text-lg text-violetGray'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
                     <GetStartedButton />
                 </div>
-                <div className=''>
-                <img className='ml-16' src={desktopImage} alt="desktop-image" /> 
+                <div className="w-full h-full bg-no-repeat bg-[center_right_-6rem] "  style={{backgroundImage: `url(${desktopImage})`}}
+                 >
+                
                 </div>
                 
             </div>
