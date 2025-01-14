@@ -7,7 +7,8 @@ module.exports = {
       colors: {
         'violetGray' : '	#9e9aa7', 
         "teal" : "hsl(180, 66%, 49%)",
-        "DarkViolet" : "hsl(257, 27%, 26%)"
+        "DarkViolet" : "hsl(257, 27%, 26%)",
+        "VeryDarkViolet" : "hsl(260, 8%, 14%)"
       }
     },
   },
