@@ -1,6 +1,6 @@
 export default function MiddleSection(){
     return(
-        <div className="bg-slate-100 h-full flex flex-col items-center ">
+        <div className="bg-slate-100 h-full flex flex-col items-center p-16">
             <div className="text-center">
                 <h2>Advanced Statistics</h2>
                 <p>Track how your links are performing across the web with an Advanced
