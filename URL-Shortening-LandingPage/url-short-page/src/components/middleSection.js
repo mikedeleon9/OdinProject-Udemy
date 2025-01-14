@@ -11,14 +11,15 @@ export default function MiddleSection(){
                     statistics dashboard.
                 </p>
             </div>
+            
         <div className="flex gap-8 lg:mx-36 2xl:mx-64 h-3/4 relative ">
      
-            <div className='p-16 bg-white h-64 z-10 relative rounded-lg '>
+            <div className='flex  flex-col flex-wrap p-16 bg-white h-64 z-10 relative rounded-lg '>
                 <div className="bg-VeryDarkViolet p-4 rounded-full absolute top-[-2rem] left-6">
                     <img className="" src={brandRecognitionIcon} alt="brand-icon"></img>
                 </div>
                 <h3>Brand Recognition</h3>
-                <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instill confidence in your content.</p>
+                <p className="">Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instill confidence in your content.</p>
             </div>
             
             <div className='mt-6 p-16 bg-white h-64 z-10 relative rounded-lg flex flex-col'>
