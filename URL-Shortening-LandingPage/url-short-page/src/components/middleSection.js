@@ -13,7 +13,7 @@ export default function MiddleSection(){
             </div>
         <div className="flex gap-8 lg:mx-36 2xl:mx-64 h-3/4 relative ">
      
-            <div className='p-16 bg-white h-64 z-10 relative rounded-lg'>
+            <div className='p-16 bg-white h-64 z-10 relative rounded-lg '>
                 <div className="bg-VeryDarkViolet p-4 rounded-full absolute top-[-2rem] left-6">
                     <img className="" src={brandRecognitionIcon} alt="brand-icon"></img>
                 </div>
