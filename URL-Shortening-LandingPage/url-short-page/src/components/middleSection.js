@@ -21,13 +21,15 @@ export default function MiddleSection(){
                 <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instill confidence in your content.</p>
             </div>
             
-            <div className='mt-6 p-16 bg-white h-64 z-10 relative rounded-lg'>
+            <div className='mt-6 p-16 bg-white h-64 z-10 relative rounded-lg flex flex-col'>
             <div className="bg-VeryDarkViolet p-4 rounded-full absolute top-[-2rem] left-6 ">
                     <img className="" src={detailedRecordsIcon} alt="brand-icon"></img>
                 </div>
+                
                 <h3>Detailed Records</h3>
                 <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
             </div>
+
             <div className='mt-16 p-16 bg-white h-64 z-10 relative rounded-lg'>
             <div className="bg-VeryDarkViolet p-4 rounded-full absolute top-[-2rem] left-6 ">
                     <img className="" src={customizableIcons} alt="brand-icon"></img>
