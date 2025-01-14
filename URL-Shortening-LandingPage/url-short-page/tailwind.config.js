@@ -5,10 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'violetGray' : '	#9e9aa7', 
+        'violetGray' : 'hsl(257, 7%, 63%)', 
         "teal" : "hsl(180, 66%, 49%)",
         "DarkViolet" : "hsl(257, 27%, 26%)",
-        "VeryDarkViolet" : "hsl(260, 8%, 14%)"
+        "VeryDarkViolet" : "hsl(260, 8%, 14%)",
+        "grayish" : 'hsl(0, 0%, 75%)'
       }
     },
   },
