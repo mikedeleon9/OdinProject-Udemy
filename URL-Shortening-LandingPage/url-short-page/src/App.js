@@ -6,7 +6,7 @@ import MiddleSection from './components/middleSection';
 
 function App() {
   return (
-    <div className="App  py-8 border-2  h-screen">
+    <div className="App  py-8  h-screen">
       <Header />
       <Intro />
       <MiddleSection />
