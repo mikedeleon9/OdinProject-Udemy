@@ -4,7 +4,7 @@ import MiddleSearch from './middleSearch'
 
 export default function Intro(){
     return(
-        <div className='  2xl:mx-64 h-screen'>
+        <div className='  2xl:mx-64 h-full'>
         
             <div className="h-full flex   ">
                 <div className=" flex flex-col gap-4 justify-center " >
