@@ -4,9 +4,9 @@ import MiddleSearch from './middleSearch'
 
 export default function Intro(){
     return(
-        <div className='  2xl:mx-64 h-full'>
+        <div className='  2xl:mx-64 h-full  '>
         
-            <div className="h-full flex   ">
+            <div className="h-5/6 flex">
                 <div className=" flex flex-col gap-4 justify-center " >
                     <h1 className="text-6xl font-bold">More than just shorter links</h1>
                     <p className='text-lg text-violetGray'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
