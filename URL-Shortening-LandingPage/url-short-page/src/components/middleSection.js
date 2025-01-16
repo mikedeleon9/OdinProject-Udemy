@@ -4,7 +4,7 @@ import customizableIcons from "../images/icon-fully-customizable.svg"
 
 export default function MiddleSection(){
     return(
-        <div className="bg-indigo-100 100 h-full  flex flex-col items-center p-16 ">
+        <div className="bg-indigo-100 100 h-full border-2 border-red-400 flex flex-col items-center p-16 ">
             <div className="text-center p-16 flex flex-col gap-6 ">
                 <h2 className="text-2xl font-bold">Advanced Statistics</h2>
                 <p className="text-violetGray font-bold">Track how your links are performing across the web with an Advanced
