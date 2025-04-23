@@ -1,1 +1,8 @@
 @import "tailwindCSS";
+
+
+
+.Home-Page-Main{
+  background: url('./Images/home/background-home-desktop.jpg')
+}
+
