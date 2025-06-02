@@ -6,3 +6,8 @@
   background-repeat: no-repeat
 }
 
+.main-text{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
