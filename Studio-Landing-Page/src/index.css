@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+.hero-section{
+  background-image: url('./images/desktop/image-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
